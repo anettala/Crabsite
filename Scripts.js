@@ -40,7 +40,7 @@ function toObjects(text) {
     var rows = text.split(NEWLINE).slice(1);
     
     rows.forEach(function (h) {
-        var values = rows.split(DELIMITER).trim();
+        var values = h.split(DELIMITER).trim();
         console.log(values);
         crabs.push(new Crab(values[0], values[2], values[3], values[4], values[5], values[6], values[7], values[8], values[9], values[11]));
     });
