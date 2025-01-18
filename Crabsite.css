@@ -117,7 +117,7 @@
   padding: 10px 15px 10px 15px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #b3b3b3;
   display: block;
 }
 
@@ -140,17 +140,19 @@
   border-width: 1.5px;
   padding-left: 20px;
   width: 70%;
+  color: rgb(255, 255, 255);
 }
-
 .img-inf {
   margin: auto;
   display: flex;
   flex-direction: row;
-  background-color: white;
+  background: rgba(19, 16, 31, 0.8);;
   border: solid;
+  border-color: gray;
+  border-radius: 13px;
   border-width: 1px;
   padding: 15px;
-  width:80%;
+  width:70%;
   margin: 30px 20px 20px 40px;
 }
 
@@ -158,10 +160,13 @@
   height: 150px;
   width: 150px;
   display: block;
+  object-fit: contain;
+  color: white;
 }
 
 .cl-inf {
   margin-left: 20px;
+  color: rgb(210, 210, 210);
 }
 
 .cl-inf h2{
@@ -178,14 +183,23 @@
 .cl-area {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   font-size: 20px;
   margin-bottom: 10px;
-  column-gap: 20%;
+  column-gap: 10px;
 }
 
 .cl-type {
   display: flex;
   flex-direction: row;
   font-size: 20px;
-  column-gap: 20%;
+  column-gap: 30%;
+}
+
+.zoom-big {
+  transition: transform .15s; /* Animation */
+}
+
+.zoom-big:hover {
+  transform: scale(2.3);
 }

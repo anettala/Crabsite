@@ -3,26 +3,26 @@ Harness Snipper,TRUE,ARR,Mor Dhona,Mor Dhona,,FALSE,Dungeon,The Keeper of the La
 Cave Crab,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Dungeon,Satasha (Hard),1,,cavecrab.jpg
 Dripping Sallet,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Dungeon,Satasha (Hard),1,,drippingsallet.jpg
 Cancer,TRUE,ARR,La Noscea,Eastern La Noscea,X: 31 Y: 35,FALSE,Fate,It's Not Lupus,1,,lupus.png
-Shearing Sheridan,TRUE,ARR,La Noscea,Middle La Noscea,X: 16 Y: 14,FALSE,Fate,Shearing is Caring,1,,shearing.jpg
+Shearing Sheridan,TRUE,ARR,La Noscea,Middle La Noscea,X: 16 Y: 14,FALSE,Fate,Shearing is Caring,1,,shearing.png
 Karkinos,TRUE,ARR,La Noscea,Upper La Noscea,X: 14 Y: 24,FALSE,Fate,Giant Enemy Crab,1,,big.png
 Old Six-arms,TRUE,ARR,La Noscea,Western La Noscea,X: 31.1 Y: 29.3,FALSE,Fate,(I Just) Died in Six Arms Tonight,1,,old.png
 Bubbly Bernie,TRUE,ARR,Thanalan,Western Thanalan,X: 15.6 Y: 16.1,FALSE,Fate,Bubble Trouble,1,,bernie.jpg
 Dark Helmet,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Hunt,,1,,darkhelmet.png
 Nahn,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Hunt,,1,,nahn.png
-Bloodshore Snipper,TRUE,ARR,La Noscea,Eastern La Noscea,,FALSE,Leve,"Clearing Steer, Out to Sea, Sol Survivors, Under Foot",1,,blood.png
+Bloodshore Snipper,TRUE,ARR,La Noscea,Eastern La Noscea,,FALSE,Leve,Clearing Steer; Out to Sea; Sol Survivors; Under Foot,1,,blood.png
 Decoy Crab,TRUE,ARR,La Noscea,Lower La Noscea,,FALSE,Leve,Of Mice and Demons,1,,decoy.png
 Moraby Stoneshell,TRUE,ARR,La Noscea,Lower La Noscea,,FALSE,Leve,Wrong and Rite,1,,mor.png
-Suspicious Megalocrab,TRUE,ARR,La Noscea,Lower La Noscea,,FALSE,Leve,"Claw-struck, The Deathliest Catch",1,,sus.png
-Big Claw,TRUE,ARR,La Noscea,"Western La Noscea, Lower La Noscea",,FALSE,Leve,"Grabbing Crabs, Claw-struck, The Deathliest Catch",1,,bigclaw.png
-Loamshell,TRUE,ARR,Thanalan,Western Thanalan,,FALSE,Leve,"From Ruins to Riches, Fields of Beans",1,,loam.png
+Suspicious Megalocrab,TRUE,ARR,La Noscea,Lower La Noscea,,FALSE,Leve,Claw-struck; The Deathliest Catch,1,,sus.png
+Big Claw,TRUE,ARR,La Noscea,Western La Noscea; Lower La Noscea,,FALSE,Leve,Grabbing Crabs; Claw-struck; The Deathliest Catch,1,,bigclaw.png
+Loamshell,TRUE,ARR,Thanalan,Western Thanalan,,FALSE,Leve,From Ruins to Riches; Fields of Beans,1,,loam.png
 Gripper,TRUE,ARR,La Noscea,Eastern La Noscea,,FALSE,Quest,Get a Grip,1,,gripper.jpg
-Territorial Snipper,TRUE,ARR,La Noscea,Other,,FALSE,Treasure Map,"Goatskin Treasure Map, Toadskin Treasure Map",1,,territorialsnipper.png
+Territorial Snipper,TRUE,ARR,La Noscea,Other,,FALSE,Treasure Map,Goatskin Treasure Map; Toadskin Treasure Map,1,,territorialsnipper.png
 Codpiece Clipper,TRUE,ARR,Mor Dhona,Mor Dhona,,FALSE,Dungeon,The Keeper of the Lake,2,,codpiececlipper.jpg
 Beryl Crab,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Dungeon,Satasha (Hard),2,,berylcrab.jpg
 Hungry Snipper,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Quest,A Quick Snip	,2,,hungry.png
 Spawning Megalocrab,TRUE,ARR,La Noscea,Middle La Noscea,X: 15 Y: 12,FALSE,Fate,Sister Crustacean,3,,sister.png
 Flintshell,TRUE,ARR,The Black Shroud,South Shroud,,FALSE,Quest,Heart of the Forest,3,,flint.jpg
-Territorial Stoneshell,TRUE,ARR,La Noscea,Other,,FALSE,Treasure Map,"Boarskin Treasure Map, Goatskin Treasure Map",3,,territorialstoneshell.png
+Territorial Stoneshell,TRUE,ARR,La Noscea,Other,,FALSE,Treasure Map,Boarskin Treasure Map; Goatskin Treasure Map,3,,territorialstoneshell.png
 Territorial Megalocrab,TRUE,ARR,La Noscea,Other,,FALSE,Treasure Map,Peisteskin Treasure Map,3,,terry.png
 Sallet Crab,TRUE,ARR,La Noscea,Lower La Noscea,,FALSE,Dungeon,Hullbreaker Isle,4,,salletcrab.jpg
 Fossilshell,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Dungeon,Sastasha,4,,sastasha.png
@@ -38,11 +38,11 @@ Rock Crab,TRUE,ARR,La Noscea,Western La Noscea,,TRUE,Dungeon,Sastasha,,Deleted,
 Moonfire Snipper,TRUE,ARR,La Noscea,Eastern La Noscea,X: 35 Y: 25,TRUE,Fate,Snippers Gonna Snip,,Moonfire Faire (2017),
 Robber Crab,TRUE,ARR,La Noscea,Eastern La Noscea,,TRUE,Fate,Our Favorite Pastime,,Only available during The Maiden's Rhapsody Event,
 Ironshell,TRUE,ARR,The Black Shroud,East Shroud,,TRUE,Overworld,,,Went extinct from the Calamity,
-Lake Crab,TRUE,ARR,The Black Shroud,"East Shroud, North Shroud",,TRUE,Overworld,,,Went extinct from the Calamity,
-Clipper,TRUE,ARR,La Noscea,"Eastern La Noscea, Lower La Noscea, Upper La Noscea, Western La Noscea",,TRUE,Overworld,,,Went extinct from the Calamity,
+Lake Crab,TRUE,ARR,The Black Shroud,East Shroud; North Shroud,,TRUE,Overworld,,,Went extinct from the Calamity,
+Clipper,TRUE,ARR,La Noscea,Eastern La Noscea; Lower La Noscea; Upper La Noscea; Western La Noscea,,TRUE,Overworld,,,Went extinct from the Calamity,
 Gravid Crab,TRUE,ARR,La Noscea,Western La Noscea,,TRUE,Overworld,,,Went extinct from the Calamity,
-Delta Crab,TRUE,ARR,The Black Shroud,"Central Shroud, North Shroud, South Shroud",,TRUE,"Overworld, Dungeon",The Mun-Tuy Cellars (1.x),,Went extinct from the Calamity,
-Island Crab,TRUE,ARR,La Noscea,"Lower La Noscea, Western La Noscea",,TRUE,"Overworld, Dungeon",Cassiopeia Hollow (1.0-1.23b),,Went extinct from the Calamity,
+Delta Crab,TRUE,ARR,The Black Shroud,Central Shroud; North Shroud; South Shroud,,TRUE,Overworld; Dungeon,The Mun-Tuy Cellars (1.x),,Went extinct from the Calamity,
+Island Crab,TRUE,ARR,La Noscea,Lower La Noscea; Western La Noscea,,TRUE,Overworld; Dungeon,Cassiopeia Hollow (1.0-1.23b),,Went extinct from the Calamity,
 Aquarius,TRUE,DT,Yok Tural,Yak T'el,,FALSE,Raid,Alliance raid Jeuno: The First Walk,1,,aquarius.jpg
 Valley Tumbleclaw,FALSE,DT,Xak Tural,Shaaloani,,FALSE,Dungeon,Tender Valley,2,,
 Robber Crab,TRUE,DT,Yok Tural,Yak T'el,,FALSE,Raid,Alliance raid Jeuno: The First Walk,2,,robbercrab.jpg
@@ -68,7 +68,7 @@ Orthos Big Claw,FALSE,EW,Mor Dhona,Mor Dhona,,FALSE,Deep Dungeon,Eureka Orthos (
 Orthos Craklaw,FALSE,EW,Mor Dhona,Mor Dhona,,FALSE,Deep Dungeon,Eureka Orthos (Floors 51-60),3,,
 Polis Snipper,TRUE,HW,Other,Other,,FALSE,Treasure Map,The Aquapolis,1,,polissnipper (1).png
 Polis Shell,TRUE,HW,Other,Other,,FALSE,Treasure Map,The Aquapolis,2,,polisshell.png
-Lava Crab,TRUE,HW,Dravania,"Churning Mists, Middle La Noscea",,FALSE,Dungeon,Sohm Al (Hard),3,,lava.png
+Lava Crab,TRUE,HW,Dravania,Churning Mists; Middle La Noscea,,FALSE,Dungeon,Sohm Al (Hard),3,,lava.png
 Mythrite Shell,TRUE,HW,Abalathia's Spine,Sea of Clouds,,FALSE,Dungeon,Neverreap,3,,mythriteshell.jpg
 Polis Sallet,TRUE,HW,Other,Other,,FALSE,Treasure Map,The Aquapolis,12,,polis.png
 Peckish Snipper,TRUE,HW,La Noscea,Eastern La Noscea,,FALSE,Quest,Blood on the Sands,13,,peckish.png
@@ -93,18 +93,18 @@ Warmspring Gasame,TRUE,SB,Othard,The Ruby Sea,,FALSE,Quest,The Fight for Surviva
 Violet Coralshell,TRUE,SB,Othard,The Ruby Sea,,FALSE,Dungeon,Shisui of the Violet Tides,3,,violetcoral.jpg
 River Unkiu,TRUE,SB,Othard,Yanxia,,FALSE,Dungeon,The Swallow's Compass,3,,riverunkiu.jpg
 Coralshell,TRUE,SB,Othard,The Ruby Sea,X: 28.9 Y: 7.3,FALSE,Fate,The Coral High Ground,3,,coralshell2.png
-Canal Coralshell,TRUE,SB,Other,Other,,FALSE,Treasure Map,"The Hidden Canals of Uznair, The Lost Canals of Uznair",3,,canalcoralshell.png
-Canal Craklaw,TRUE,SB,Other,Other,,FALSE,Treasure Map,"The Hidden Canals of Uznair, The Lost Canals of Uznair",3,,canal.png
+Canal Coralshell,TRUE,SB,Other,Other,,FALSE,Treasure Map,The Hidden Canals of Uznair; The Lost Canals of Uznair,3,,canalcoralshell.png
+Canal Craklaw,TRUE,SB,Other,Other,,FALSE,Treasure Map,The Hidden Canals of Uznair; The Lost Canals of Uznair,3,,canal.png
 Mighty Craklaw,TRUE,SB,Ilsabard,Anemos,X: 11 Y: 27,FALSE,Field operation,,4,,anemos2.png
 Unkiu,TRUE,SB,Othard,The Ruby Sea,,FALSE,Quest,Unmeasured Strength,4,,un.png
-Canal Crab,TRUE,SB,Other,Other,,FALSE,Treasure Map,"The Hidden Canals of Uznair, The Lost Canals of Uznair",4,,canalcrab.png
+Canal Crab,TRUE,SB,Other,Other,,FALSE,Treasure Map,The Hidden Canals of Uznair; The Lost Canals of Uznair,4,,canalcrab.png
 Hellish Gasame,TRUE,SB,Othard,The Ruby Sea,,FALSE,Dungeon,Hells' Lid,5,,hellishgasame.jpg
 Spangencrab,TRUE,SB,Ilsabard,Anemos,X: 29 Y: 21,FALSE,Field operation,,6,,anemos1.png
 Gasame,TRUE,SB,Othard,The Ruby Sea,X: 24.7 Y: 36.6,FALSE,Overworld,,6,,gasame.jpg
 Pyros Crab,TRUE,SB,Ilsabard,Pyros,X: 14.5 Y: 6.8,FALSE,Field operation,,7,,pyros.png
 Lost Snipper,TRUE,SB,Ilsabard,Pyros,X: 24.1 Y: 26.2,FALSE,Fate,We're All Mad Here,8,,oeh.png
 Craklaw,TRUE,SB,Othard,The Ruby Sea,X: 33.5 Y: 4.7,FALSE,Overworld,,10,,coralshell.jpg
-Stray Snipper,TRUE,SB,Ilsabard,Pyros,X: 26.1 Y: 25.6,FALSE,Field operation,,11,,stary.png
+Stray Snipper,TRUE,SB,Ilsabard,Pyros,X: 26.1 Y: 25.6,FALSE,Field operation,,11,,stray.png
 Val Snipper,TRUE,SB,Ilsabard,Pagos,X: 9 Y: 16,FALSE,Field operation,,12,,pagos1.png
 Unkiu,TRUE,SB,Othard,The Ruby Sea,X: 35.8 Y: 21.5,FALSE,Overworld,,20,,unkiu.jpg
 Clipper,TRUE,SB,Ilsabard,Pyros,X: 23.7 Y: 16.3,FALSE,Field operation,,21,,clipper.png

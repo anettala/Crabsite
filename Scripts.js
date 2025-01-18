@@ -29,10 +29,11 @@ fetch(f)
   .then(csvData => {
     console.log('Raw CSV Data:', csvData);
     toObjects(csvData); // Call your parser function
+    displayExpansion();
   })
   .catch(error => {
     console.error('Error fetching the CSV file:', error);
-  });
+});
 
 function toObjects(text) {
     if (!text) {return;}
@@ -40,8 +41,7 @@ function toObjects(text) {
     var rows = text.split(NEWLINE).slice(1);
     
     rows.forEach(function (h) {
-        var values = rows.split(DELIMITER).trim();
-        console.log(values);
+        var values = h.split(DELIMITER);
         crabs.push(new Crab(values[0], values[2], values[3], values[4], values[5], values[6], values[7], values[8], values[9], values[11]));
     });
 }
@@ -53,37 +53,40 @@ function displayExpansion() {
     const contentDiv = document.getElementById("list-content");
 
     const expansions = ["A Realm Reborn", "Heavensward", "Stormblood", "Shadowbringers", "Endwalker", "Dawntrail"];
-    const exp_short = ["ARR", "HW", "ST", "SHB", "EW", "DT"];
+    const exp_short = ["ARR", "HW", "SB", "SHB", "EW", "DT"];
 
     exp_short.forEach(exp => {
         const copyDiv = exampleDiv.cloneNode(true);
         copyDiv.style.display = "initial";
         copyDiv.querySelector("#exp-start").textContent=expansions[exp_short.indexOf(exp)];
+        copyDiv.id=exp;
 
         contentDiv.appendChild(copyDiv);
-
-        crabs.filter(crab => crab.expansion === exp).forEach(crab => {
-            const crabDiv = exampleCrab.cloneNode(true);
-            if (crab.extinct === "FALSE") {
-                crabDiv.querySelector(".cl-img").src = "/Pictures/Masterdoc/" + crab.image;
-            }
-            if (crab.image === ""){
-                crabDiv.querySelector(".cl-img").alt = "lazy very lazy no pic";
-            }
-            crabDiv.querySelector("#crabname").textContent = crab.name;
-            crabDiv.querySelector("#expansion").textContent = crab.expansion;
-            crabDiv.querySelector("#region").textContent = crab.region;
-            crabDiv.querySelector("#zone").textContent = crab.zone;
-            crabDiv.querySelector("#coords").textContent = crab.coords;
-            crabDiv.querySelector("#amount").textContent = crab.number;
-            crabDiv.querySelector("#type").textContent = crab.type;
-            crabDiv.querySelector("#nametype").textContent = crab.nametype;
+        crabs.forEach(crab => {
+            if (crab.expansion === exp){
+                exampleCrab.style.display =  "none";
+                const crabDiv = exampleCrab.cloneNode(true);
+                crabDiv.style.display = "flex";
+                if (crab.extinct === "FALSE") {
+                    if (crab.image === "\r"){
+                        crabDiv.querySelector(".cl-img").alt = "lazy very lazy no pic";
+                    } else {
+                        crabDiv.querySelector(".cl-img").src = "/Pictures/Masterdoc/" + crab.image;
+                    }
+                } else {
+                    crabDiv.querySelector(".cl-img").setAttribute("class", "cl-img");
+                }
+                crabDiv.querySelector("#crabname").textContent = crab.name;
+                crabDiv.querySelector("#expansion").textContent = expansions[exp_short.indexOf(exp)];
+                crabDiv.querySelector("#region").textContent = "Location: " + crab.region;
+                crabDiv.querySelector("#zone").textContent = crab.zone;
+                crabDiv.querySelector("#coords").textContent = crab.coords;
+                crabDiv.querySelector("#amount").textContent = "Number: " + crab.number;
+                crabDiv.querySelector("#type").textContent = "Type: " + crab.type;
+                crabDiv.querySelector("#nametype").textContent = crab.nametype;
             
-            copyDiv.appendChild(crabDiv);
+                copyDiv.appendChild(crabDiv);
+            }
         });
     });
 }
-
-window.addEventListener("load", function() {
-    displayExpansion();
-});
