@@ -68,7 +68,7 @@ function displayExpansion() {
                 const crabDiv = exampleCrab.cloneNode(true);
                 crabDiv.style.display = "flex";
                 if (crab.extinct === "FALSE") {
-                    if (crab.image === "\r"){
+                    if (crab.image === ""){
                         crabDiv.querySelector(".cl-img").alt = "lazy very lazy no pic";
                     } else {
                         crabDiv.querySelector(".cl-img").src = "Pictures/Masterdoc/" + crab.image;
