@@ -9,6 +9,13 @@
   font-style: normal;
 }
 
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .heading {flex-direction: column;}
+}
+
+/* ----MAIN PAGE---- */
 .heading {
   margin: auto;
   display: flex;
@@ -92,6 +99,8 @@
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+/* ----MASTERDOC PAGE---- */
+
  /* The sidebar menu */
  .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -104,28 +113,79 @@
   padding-top: 20px;
 }
 
-/* The navigation menu links */
 .sidenav a {
-  padding: 6px 8px 6px 16px;
+  padding: 10px 15px 10px 15px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
   display: block;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1;
 }
 
-/* Style page content */
 .list-content {
-  margin-left: 230px; /* Same as the width of the sidebar */
+  margin-left: 230px;
   padding: 0px 10px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-} 
+.expansion {
+  margin-top: 25px;
+}
+
+.expansion h1 {
+  font-size: 45px;
+  border-bottom-style: solid;
+  border-width: 1.5px;
+  padding-left: 20px;
+  width: 70%;
+}
+
+.img-inf {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border: solid;
+  border-width: 1px;
+  padding: 15px;
+  width:80%;
+  margin: 30px 20px 20px 40px;
+}
+
+.cl-img {
+  height: 150px;
+  width: 150px;
+  display: block;
+}
+
+.cl-inf {
+  margin-left: 20px;
+}
+
+.cl-inf h2{
+  font-size: 32px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.cl-inf h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.cl-area {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  margin-bottom: 10px;
+  column-gap: 20%;
+}
+
+.cl-type {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  column-gap: 20%;
+}
