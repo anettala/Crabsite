@@ -71,7 +71,7 @@ function displayExpansion() {
                     if (crab.image === "\r"){
                         crabDiv.querySelector(".cl-img").alt = "lazy very lazy no pic";
                     } else {
-                        crabDiv.querySelector(".cl-img").src = "/Pictures/Masterdoc/" + crab.image;
+                        crabDiv.querySelector(".cl-img").src = "Pictures/Masterdoc/" + crab.image;
                     }
                 } else {
                     crabDiv.querySelector(".cl-img").setAttribute("class", "cl-img");
