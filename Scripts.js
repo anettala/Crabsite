@@ -84,7 +84,7 @@ function displayExpansion() {
                 crabDiv.querySelector("#coords").textContent = crab.coords;
                 crabDiv.querySelector("#amount").textContent = "Number: " + crab.number;
                 crabDiv.querySelector("#type").textContent = "Type: " + crab.type;
-                crabDiv.querySelector("#nametype").textContent = crab.nametype;
+                crabDiv.querySelector("#nametype").textContent = " - " + crab.typename;
             
                 copyDiv.appendChild(crabDiv);
             }
