@@ -1,9 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Crabpedia</title>
+        <title>Crabpedia - COTD</title>
+        <link rel="stylesheet" href="Crabsite.css">
+        <link rel="icon" type="image/x-icon" href="Pictures/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Balthazar&display=swap" rel="stylesheet">
+        <script src="ScriptCOTD.js" type="text/javascript" defer></script>
+        <style>
+            body {
+              background-image: url("Pictures/crystal.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position-x: 50%;
+            }
+        </style>
     </head>
 </html>
-<body>
-    <p>Crab of the day</p>
+<body class="balthazar-regular">
+    <div class="cotd-nav">
+        <a href="index.html">Back</a>
+    </div>
+    <div class="cotd-box">
+        <h1>Crab Of The Day!</h1>
+        <div class="cotd-content" id="cotd-content">
+            <audio id="audioPlayer" src="Answers.mp3" style="display:none;"></audio>
+            <img id="cotd-img" src=""  alt="EXTINCT D:">
+            <div class="cotd-all">
+                <h2 id="cotd-name"></h2>
+                <div class="cotd-info">
+                    <p style="font-weight: bold;"></p>
+                    <p id="cotd-location"></p>
+                </div>
+                <div class="cotd-info">
+                    <p style="font-weight: bold;">Amount in world: </p>
+                    <p id="cotd-amount"></p>
+                </div>
+                <div class="cotd-info">
+                    <p style="font-weight: bold;">Type of content:</p>
+                    <p id="cotd-type"></p>
+                </div>
+            </div>  
+        </div>
+    </div>
 </body>
