@@ -56,7 +56,7 @@ function getCOTD() {
         if (crab.image === ""){
             crabDiv.querySelector("#cotd-img").alt = "lazy very lazy no pic";
         } else {
-            crabDiv.querySelector("#cotd-img").src = "/Pictures/Masterdoc/" + crab.image;
+            crabDiv.querySelector("#cotd-img").src = "Pictures/Masterdoc/" + crab.image;
         }
     } else {
         crabDiv.querySelector("#cotd-img").src = "/Pictures/RIP.jpg";
