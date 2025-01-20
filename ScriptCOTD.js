@@ -59,7 +59,7 @@ function getCOTD() {
             crabDiv.querySelector("#cotd-img").src = "Pictures/Masterdoc/" + crab.image;
         }
     } else {
-        crabDiv.querySelector("#cotd-img").src = "/Pictures/RIP.jpg";
+        crabDiv.querySelector("#cotd-img").src = "Pictures/RIP.jpg";
         document.getElementById("audioPlayer").play();
     }
     
