@@ -1,9 +1,45 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Crabpedia</title>
+        <title>Crabpedia - Interactive Map</title>
+        <link rel="stylesheet" href="Crabsite.css">
+        <link rel="icon" type="image/x-icon" href="Pictures/favicon.ico">
+        <style>
+          body {
+            background-image: url("Pictures/crystal.jpg");
+            background-repeat: no-repeat;
+            background-size: fill;
+            background-position-x: 50%;
+          }
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Balthazar&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin="">
+        </script>
+        
     </head>
 </html>
-<body>
-    <p>Interactive map</p>
+<body onload='makeMarkers(crabsELN, "Eastern_La_Noscea_Map.jpg", 350, 580)' class="balthazar-regular">
+    <h1 class="im-title">Interactive map</h1>
+    <div class="allmap">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Region</button>
+            <div id="myDropdown" class="dropdown-content">
+                <h4>La Noscea</h4>
+                <a href="#" onclick='makeMarkers(crabsELN, "Eastern_La_Noscea_Map.jpg", 350, 580)'>Eastern La Noscea</a>
+                <a href="#" onclick='makeMarkers(crabsMLN, "Middle_La_Noscea_Map.jpg", 600, 500)'>Middle La Noscea</a>
+                <a href="#">Lower La Noscea</a>
+            </div>
+        </div>
+        <div id="holdmap"></div> 
+    </div>
+    
+    <script src="IntMap.js"></script>
 </body>
