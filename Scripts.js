@@ -73,6 +73,7 @@ function displayExpansion() {
                         crabDiv.querySelector(".cl-img").setAttribute("class", "cl-img");
                     } else {
                         crabDiv.querySelector(".cl-img").src = "Pictures/Masterdoc/" + crab.image;
+                        crabDiv.querySelector(".cl-img").setAttribute("onclick", "window.open(this.src, '_blank');");
                     }
                 } else {
                     crabDiv.querySelector(".cl-img").setAttribute("class", "cl-img");
