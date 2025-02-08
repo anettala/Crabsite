@@ -3,13 +3,15 @@
     <head>
         <title>Crabpedia - Interactive Map</title>
         <link rel="stylesheet" href="Crabsite.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/x-icon" href="Pictures/favicon.ico">
         <style>
           body {
             background-image: url("Pictures/crystal.jpg");
             background-repeat: no-repeat;
             background-size: fill;
-            background-position-x: 50%;
+            background-color: rgb(1, 2, 17);
+            background-position-x: 130%;
           }
         </style>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,16 +31,49 @@
 <body onload='makeMarkers(crabsELN, "Eastern_La_Noscea_Map.jpg", 350, 580)' class="balthazar-regular">
     <h1 class="im-title">Interactive map</h1>
     <div class="allmap">
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Region</button>
-            <div id="myDropdown" class="dropdown-content">
-                <h4>La Noscea</h4>
+        <div class="sidenav-map">
+            <a href="index.html">Home</a>
+            <button class="dropdown-btn balthazar-regular">La Noscea
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
                 <a href="#" onclick='makeMarkers(crabsELN, "Eastern_La_Noscea_Map.jpg", 350, 580)'>Eastern La Noscea</a>
                 <a href="#" onclick='makeMarkers(crabsMLN, "Middle_La_Noscea_Map.jpg", 600, 500)'>Middle La Noscea</a>
                 <a href="#">Lower La Noscea</a>
+                <a href="#">Western La Noscea</a>
+                <a href="#">Upper La Noscea</a>
+                <a href="#">Outer La Noscea</a>
+              </div>
+            <button class="dropdown-btn balthazar-regular">The Black Shroud
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">Central Shroud</a>
+              <a href="#">East Shroud</a>
+              <a href="#">South Shroud</a>
+              <a href="#">North Shroud</a>
             </div>
+            <button class="dropdown-btn balthazar-regular">Thanalan
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="#">Western Thanalan</a>
+                <a href="#">Central Thanalan</a>
+                <a href="#">Eastern Thanalan</a>
+                <a href="#">Southern Thanalan</a>
+                <a href="#">Northern Thanalan</a>
+              </div>
+            <button class="dropdown-btn balthazar-regular balthazar-regular">Coerthas
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="#">Coerthas Central Highlands</a>
+                <a href="#">Coerthas Western Highlands</a>
+                <a href="#">The Diadem</a>
+              </div>
+            <a href="#">Mor Dhona</a>
         </div>
-        <div id="holdmap"></div> 
+        <div id="holdmap" class="main"></div> 
     </div>
     
     <script src="IntMap.js"></script>
