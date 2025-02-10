@@ -380,3 +380,7 @@
   float: right;
   padding-right: 12px;
 }
+
+.leaflet-popup-content {
+  text-align: center;
+}

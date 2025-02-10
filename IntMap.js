@@ -15,7 +15,7 @@ for (i = 0; i < dropdown.length; i++) {
 } 
 var MapIcon = L.Icon.extend({
     options: {
-        iconSize:     [35, 35], // size of the icon
+        iconSize:     [30, 30], // size of the icon
         iconAnchor:   [17.5, 35], // point of the icon which will correspond to marker's location
         popupAnchor:  [0, -20] // point from which the popup should open relative to the iconAnchor
     }
@@ -26,41 +26,74 @@ var FateIcon = new MapIcon({iconUrl: "Pictures/Map/Markers/Boss_FATE_icon.png",}
     LeveIcon = new MapIcon({iconUrl: "Pictures/Map/Markers/LEVE_icon.png"}),
     SlayIcon = new MapIcon({iconUrl: "Pictures/Map/Markers/Slay_FATE_icon.png"}),
     Fishing = new MapIcon({iconUrl: "Pictures/Map/Markers/Fishing.png"}),
-    FishingUW = new MapIcon({iconUrl: "Pictures/Map/Markers/Fishing_UW.png"});
+    FishingUW = new MapIcon({iconUrl: "Pictures/Map/Markers/Fishing_UW.png"}),
+    Dungeon = new MapIcon({iconUrl: "Pictures/Map/Markers/Dungeon.png"});
 
 class Crab {
-    constructor(x, y, name, type, info, desc) {
+    constructor(x, y, name, type, info, desc, fish) {
         this.x = x;
         this.y = y;
         this.name = name;
         this.type = type;
         this.info = info;
         this.desc = desc;
+        this.fish = fish;
     }
 }
 
 // LA NOSCEA
 
 const crabsELN = [
-    new Crab(745, 145, "Cancer", "BFATE", "It's Not Lupus", "Claws so powerful they can split a rock in two. A shell so hard, not even the hammer of a mighty hecatoncheir can crack it. Cancer, a crab rumored to have been spawned in the heavens, has appeared in eastern La Noscea. Slay him and become the stuff of legends!"),
-    new Crab(760, 170, "Snipper", "OW", "8", ""),
-    new Crab(720, 120, "Snipper", "SFATE", "Crab and Go", "Giant crabs known as snippers have invaded the once-pristine beaches of Bloodshore, making it difficult for Costa del Sol retirees to take their morning walks without having their raiments sliced to ribbons. The problem requires immediate attention, and adventurers are sought to cull the sidestepping sea creatures."),
-    new Crab(730, 243, "Bloodshore Snipper", "LEVE", "Clearing Steer; Out to Sea; Sol Survivors; Under Foot", "")
+    new Crab(745, 145, "Cancer", "BFATE", "It's Not Lupus", "Claws so powerful they can split a rock in two. A shell so hard, not even the hammer of a mighty hecatoncheir can crack it. Cancer, a crab rumored to have been spawned in the heavens, has appeared in eastern La Noscea. Slay him and become the stuff of legends!", "You can get the smallshell minion from this ;)"),
+    new Crab(760, 170, "Snipper", "OW", "8", "", ""),
+    new Crab(720, 120, "Snipper", "SFATE", "Crab and Go", "Giant crabs known as snippers have invaded the once-pristine beaches of Bloodshore, making it difficult for Costa del Sol retirees to take their morning walks without having their raiments sliced to ribbons. The problem requires immediate attention, and adventurers are sought to cull the sidestepping sea creatures.", ""),
+    new Crab(730, 243, "Bloodshore Snipper", "LEVE", "Clearing Steer; Out to Sea; Sol Survivors; Under Foot", "", ""),
+    new Crab(708, 463, "Hidden Falls", "FISH", "Mitten Crab", "", ""),
+    new Crab(473, 390, "East Agelyss River", "FISH", "Mitten Crab", "", ""),
+    new Crab(354, 355, "Red Mantis Falls", "FISH", "Mitten Crab", "", ""),
+    new Crab(476, 283, "Raincatcher Gully", "FISH", "Mitten Crab", "The Terpsichorean", ""),
+    new Crab(386, 240, "The Juggernaut", "FISH", "Mudcrab", "", "")
 ];
 
 const crabsMLN = [
-    new Crab(340, 660, "Shearing Sheridan", "BFATE", "Shearing is Caring", "Shearing Sheridan has been shearing his share of luckless passersby since long before the Calamity. What the megalocrab needs now is a good shell-shocking."),
-    new Crab(350, 720, "Spawning Megalocrab", "SFATE", "Sister Crustacean", "A spawning megalocrab will do whatever it takes to see its brood safe, and that includes slicing in half Lalafellin fishers who draw too close to the wavekin's unhatched offspring. Slay a crab, save a lad."),
-    new Crab(330, 640, "Megalocrab", "OW", "16", "")
+    new Crab(340, 660, "Shearing Sheridan", "BFATE", "Shearing is Caring", "Shearing Sheridan has been shearing his share of luckless passersby since long before the Calamity. What the megalocrab needs now is a good shell-shocking.", ""),
+    new Crab(350, 720, "Spawning Megalocrab", "SFATE", "Sister Crustacean", "A spawning megalocrab will do whatever it takes to see its brood safe, and that includes slicing in half Lalafellin fishers who draw too close to the wavekin's unhatched offspring. Slay a crab, save a lad.", ""),
+    new Crab(330, 640, "Megalocrab", "OW", "16", "", ""),
+    new Crab(487, 724, "Woad Whisper Canyon", "FISH", "River Crab", "")
 ];
 
-const crabsLLN = [];
+const crabsLLN = [
+    new Crab(556, 168, "Decoy Crab, Moraby Stoneshell", "LEVE", "Of Mice and Demons; Wrong and Rite", "", ""),
+    new Crab(564, 212, "Suspicious Megalocrab, Big Claw", "LEVE", "Claw-struck; The Deathliest Catch", "", ""),
+    new Crab(635, 140, "Hullbreaker Isle", "DUN", "Sallet Crab", "4", ""),
+    new Crab(557, 102, "Megalocrab", "OW", "17", "", ""),
+    new Crab(399, 145, "The Salt Strand", "FISH", "Helmet Crab", "Meteor Survivor", "Pebble Crab"),
+    new Crab(626, 385, "Moraby Bay", "FISH", "Pebble Crab", "", ""),
+    new Crab(832, 587, "Cedarwood", "FISH", "Pebble Crab", "", ""),
+    new Crab(618, 183, "Moraby Drydocks", "FISH", "Pebble Crab", "Jacques the Snipper", ""),
+    new Crab(573, 51, "Oschon's Torch", "FISH", "Pebble Crab", "", ""),
+    new Crab(482, 70, "Candlekeep Quay", "FISH", "Pebble Crab", "", ""),
+];
 
-const crabsWLN = [];
+const crabsWLN = [
+    new Crab(665, 492, "Sastasha(Hard)", "DUN", "Cave Crab, Dripping Sallet, Beryl Crab", "1, 1, 2", ""),
+    new Crab(736, 308, "Old Six-Arms", "SFATE", "(I Just) Died in Six Arms Tonight", "It is believed most crabs only live for two to three years─fewer if nearby Lominsans are hungry. There is one crab, however, that is rumored to have survived since the Fifth Astral Era, surviving on the blood of man (though no one can truly back that claim). All things must die, and Old Six-arms's time has come.", ""),
+    new Crab(665, 500, "Sastasha", "DUN", "Fossilshell", "4,", ""),
+    new Crab(712, 275, "The Brewer's Beacon", "FISH", "Helmet Crab"),
+    new Crab(802, 247, "Swiftperch", "FISH", "Pebble Crab"),
+];
 
-const crabsULN = [];
+const crabsULN = [
+    new Crab(320, 430, "Karkinos", "SFATE", "Giant Enemy Crab", "A crab released into Bronze Lake by Qiqirn so that the beastmen might harvest its sweet eggs has grown into an uncontrollable nuisance. Not only does it not produce any eggs of its own (on the account of being a male), it also ravages the nests of the local waterfowl, devouring their eggs. Karkinos must be slain.", ""),
+    new Crab(657, 458, "Northeast Bronze Lake", "FISH", "Mitten Crab", "", ""),
+    new Crab(308, 431, "Oakwood", "FISH", "River Crab", "", ""),
+    new Crab(194, 508, "Fool Falls", "FISH", "River Crab", "", ""),
+    new Crab(792, 415, "Bronze Lake Shallows", "FISH", "River Crab", "", ""),
+];
 
-const crabsOLN = [];
+const crabsOLN = [
+    new Crab(448, 583, "Northwest Bronze Lake", "FISH", "Mitten Crab", "", "")
+];
 
 // THE BLACK SHROUD
 
@@ -82,7 +115,7 @@ const crabsET = [];
 
 const crabsST = [];
 
-const crabsNT = [];
+const crabsNT = []; //NO CRAB
 
 // COERTHAS + MOR DHONA
 
@@ -112,17 +145,19 @@ function makeMarkers(crabList, mapname, view1, view2) {
     var added = []
     crabList.forEach(crab => {
         if (crab.type === "BFATE"){
-            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:FateIcon}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + crab.desc));
+            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:FateIcon}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + crab.desc + "<br>" + crab.fish));
         } else if (crab.type === "OW") {
             added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:OwIcon}).bindPopup(crab.name + "<br>" + "Amount: " + crab.info));
         } else if (crab.type === "LEVE") {
             added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:LeveIcon}).bindPopup(crab.name + "<br>" + "Leves: " + crab.info));
         } else if (crab.type === "SFATE"){
-            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:SlayIcon}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + crab.desc));
+            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:SlayIcon}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + crab.desc + "<br>" + crab.fish));
         } else if (crab.type === "FISH") {
-            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Fishing}).bindPopup(crab.name + "<br>" + crab.info));
+            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Fishing}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + crab.desc + "<br>" + crab.fish));
         } else if (crab.type === "FISHUW") {
             added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:FishingUW}).bindPopup(crab.name + "<br>" + crab.info));
+        } else if (crab.type === "DUN") {
+            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Dungeon}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + "Amount: " + crab.desc));
         }   
     });
     var markers = L.layerGroup(added).addTo(map);
