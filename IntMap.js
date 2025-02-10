@@ -36,6 +36,8 @@ class Crab {
     }
 }
 
+// LA NOSCEA
+
 const crabsELN = [
     new Crab(745, 145, "Cancer", "BFATE", "It's Not Lupus"),
     new Crab(760, 170, "Snipper", "OW", "8"),
@@ -56,6 +58,38 @@ const crabsWLN = [];
 const crabsULN = [];
 
 const crabsOLN = [];
+
+// THE BLACK SHROUD
+
+const crabsES = [];
+
+const crabsSS = [];
+
+const crabsCS = [];
+
+const crabsNS = [];
+
+// THANALAN
+
+const crabsWT = [];
+
+const crabsCT = [];
+
+const crabsET = [];
+
+const crabsST = [];
+
+const crabsNT = [];
+
+// COERTHAS + MOR DHONA
+
+const crabsCCH = [];
+
+const crabsCWH = [];
+
+const crabsTD = [];
+
+const crabsMD = [];
 
 function makeMarkers(crabList, mapname, view1, view2) {
     document.getElementById('holdmap').innerHTML = "<div id='map'></div>";
