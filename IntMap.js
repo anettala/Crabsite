@@ -20,6 +20,7 @@ var MapIcon = L.Icon.extend({
         popupAnchor:  [0, -20] // point from which the popup should open relative to the iconAnchor
     }
 });
+
 var FateIcon = new MapIcon({iconUrl: "Pictures/Map/Markers/Boss_FATE_icon.png",}),
     OwIcon = new MapIcon({iconUrl: "Pictures/Map/Markers/OW_icon.png",}),
     LeveIcon = new MapIcon({iconUrl: "Pictures/Map/Markers/LEVE_icon.png"});
@@ -48,6 +49,14 @@ const crabsMLN = [
     new Crab(330, 640, "Megalocrab", "OW", "16")
 ];
 
+const crabsLLN = [];
+
+const crabsWLN = [];
+
+const crabsULN = [];
+
+const crabsOLN = [];
+
 function makeMarkers(crabList, mapname, view1, view2) {
     document.getElementById('holdmap').innerHTML = "<div id='map'></div>";
     const img = new Image();
@@ -61,7 +70,7 @@ function makeMarkers(crabList, mapname, view1, view2) {
     var bounds = [[0,0], [1000,1000]];
     var image = L.imageOverlay("Pictures/Map/"+mapname, bounds).addTo(map);
     map.fitBounds(bounds);
-    map.setView( [view1, view2], 0.4);
+    map.setView( [view1, view2], 0.4)
 
     var added = []
     crabList.forEach(crab => {
@@ -76,5 +85,12 @@ function makeMarkers(crabList, mapname, view1, view2) {
         }   
     });
     var markers = L.layerGroup(added).addTo(map);
+
+    map.on('click', function(e){
+        var coord = e.latlng;
+        var lat = coord.lat;
+        var lng = coord.lng;
+        console.log("You clicked the map at latitude: " + lat + " and longitude: " + lng);
+        });
 }
  
