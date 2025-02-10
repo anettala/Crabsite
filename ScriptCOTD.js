@@ -29,7 +29,10 @@ fetch(f)
   .then(csvData => {
     console.log('Raw CSV Data:', csvData);
     toObjects(csvData); // Call your parser function
-    scheduleNextRun();
+    const date = new Date();
+    const hour = date.getHours();
+    const min = date.getMinutes();
+    scheduleNextRun(hour, min, getCOTD());
   })
   .catch(error => {
     console.error('Error fetching the CSV file:', error);
@@ -72,27 +75,21 @@ function getCOTD() {
     crabDiv.querySelector("#cotd-type").textContent = crab.type + " - " + crab.typename
 }
 
-function scheduleNextRun() {
-    // Get current time
-    let now = new Date();
+function scheduleNextRun(hour, minutes, getCOTD) {
+    const twentyFourHours = 86400000;
+    const now = new Date();
+    let eta_ms = new Date(now.getFullYear(), now.getMonth(), now.getDate(), hour, minutes, 0, 0).getTime() - now;
+    if (eta_ms < 0)
+    {
+        eta_ms += twentyFourHours;
+    }
 
-    // Set next midnight time
-    let midnight = new Date();
-    midnight.setHours(24, 0, 0, 0); // Set to next midnight
-
-    // Calculate time difference in milliseconds
-    let timeUntilMidnight = midnight - now;
-
-    console.log("Next run scheduled in:", timeUntilMidnight / 1000, "seconds");
-
-    getCOTD();
-    // Schedule execution at next midnight
-    setTimeout(() => {
+    setTimeout(function() {
+        //run once
         getCOTD();
-
-        // After first execution, run every 24 hours
-        setInterval(getCOTD, 24 * 60 * 60 * 1000);
-    }, timeUntilMidnight);
+        // run every 24 hours from now on
+        setInterval(getCOTD, twentyFourHours);
+      }, eta_ms);
 }
 
 // Simple seeded PRNG function (Mulberry32)
