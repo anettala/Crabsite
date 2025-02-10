@@ -309,12 +309,12 @@
   font-size: 40px;
   text-align: center;
   padding-top: 5px;
-  padding-bottom: 35px;
+  padding-bottom: 20px;
 }
 
 #map {
   height: 650px;
-  width: 900px;
+  width: 1000px;
   display: block;
   margin-left: auto;
   margin-right: auto;
