@@ -133,11 +133,12 @@ const crabsNS = [
 // THANALAN
 
 const crabsWT = [
-    new Crab(372, 519, "Bubbly Bernie", "BFATE", "Bubble Trouble", "Several crab-loving fishers have journeyed to the Footfalls in search of a giant delicacy-to-be known to the locals as Bubbly Bernie. Unfortunately, without some help, it looks like the fishers are going to be the ones to get served.", ""),
-    new Crab(623, 500, "Loamshell", "LEVE", "From Ruins to Riches; Fields of Beans", "", ""),
-    new Crab(400, 516, "Thickshell", "OW", "9", "", ""),
-    new Crab(420, 530, "The Footfalls", "FISH", "Mudcrab", "Mud Golem", ""),
-    new Crab(360, 439, "The Silver Bazaar", "FISH", "Pebble Crab", "", ""),
+    new Crab(365, 627, "Bubbly Bernie", "BFATE", "Bubble Trouble", "Several crab-loving fishers have journeyed to the Footfalls in search of a giant delicacy-to-be known to the locals as Bubbly Bernie. Unfortunately, without some help, it looks like the fishers are going to be the ones to get served.", ""),
+    new Crab(538, 631, "Loamshell", "LEVE", "From Ruins to Riches; Fields of Beans", "", ""),
+    new Crab(382, 626, "Thickshell", "OW", "9", "", ""),
+    new Crab(396, 639, "The Footfalls", "FISH", "Mudcrab", "Mud Golem", ""),
+    new Crab(340, 298, "The Silver Bazaar", "FISH", "Pebble Crab", "", ""),
+    new Crab(261, 706, "Vesper Bay", "FISH", "Pebble Crab", "", ""),
 ];
 
 const crabsCT = [
@@ -156,8 +157,6 @@ const crabsST = [
 ];
 
 // COERTHAS + MOR DHONA
-
-const crabsCCH = []; // NO CRAB
 
 const crabsCWH = [
     new Crab(737, 377, "Riversmeet", "FISH", "Coerthan Crab", "", ""),
@@ -178,41 +177,95 @@ const crabsMD = [
 
 // ABALATHIA'S SPINE
 
-const crabsSOC = [];
+const crabsSOC = [
+    new Crab(909, 838, "Neverreap", "DUN", "Mythrite Shell", "3", "")
+];
 
-const crabsAL = [];
+const crabsAL = [
+    new Crab(370, 739, "Alpha Quadrant", "FISH", "High Allagan Helmet", "Augmented High Allagan Helmet", ""),
+];
 
 // DRAVANIA
 
-const crabsTDF = [];
+const crabsTDF = [
+    new Crab(281, 715, "Mourn", "FISH", "Granite Crab", "Lava Crab", ""),
+    new Crab(204, 843, "West Mourn", "FISH", "Granite Crab", "", ""),
+    new Crab(426, 774, "Anyx Old", "FISH", "Granite Crab", "Lava Crab", ""),
+    new Crab(154, 892, "Halo", "FISH", "Granite Crab", "", "")
+];
 
-const crabsTCM = [];
+const crabsTCM = [
+    new Crab(583, 171, "Sohm Al", "DUN", "Lava", "3", "")
+];
 
 // GYR ABANIA
 
-const crabsRR = [];
+const crabsRR = [
+    new Crab(488, 360, "Upper Mirage Creek", "FISH", "Broken Crab", "", "")
+];
 
-const crabsTF = [];
+const crabsTF = [
+    new Crab(314, 262, "The Comet's Tail", "FISH", "Nirvana Crab", "", "")
+];
 
-const crabsTP = [];
+const crabsTP = [
+    new Crab(124, 657, "Grymm & Enid", "FISH", "Grymm Crab", "", "")
+];
 
-const crabsTL = [];
+const crabsTL = [
+    new Crab(571, 340, "Loch Seld Southeastern Lakebed", "FISH", "Carpenter Crab", "", ""),
+    new Crab(477, 316, "Loch Seld Southwestern Lakebed", "FISH", "Carpenter Crab", "", ""),
+    new Crab(541, 422, "Loch Seld Central Lakebed", "FISH", "Mercenary Crab", "", "")
+];
 
 // OTHARD
 
-const crabsTRS = [];
+const crabsTRS = [
+    new Crab(496, 803, "Heaven-On-High", "DEEP", "Heavenly Coralshell, Heavenly Unkiu", "1, 1", "1-10; 11-20"),
+    new Crab(39, 120, "Shisui of the Violet Tides", "DUN", "Blue Unkiu, Violet Coralshell", "1, 3", ""),
+    new Crab(733, 387, "Mishirushi", "BFATE", "Soak Up the Sun", "From Kugane's back alleys to her bathhouses, dark rumors spread like blood from the neck of a decapitated criminal. The rumor? That the decapitated head of Mishirushi─a fallen warrior executed for murder─has come back to life to continue its killing ways, slicing up innocent maidens with its crab-like claws. Crab-like claws?", ""),
+    new Crab(703, 172, "Unkiu", "SFATE", "Crab Mentality", "Unkiu hunt by riding ocean currents, preserving energy until they have spotted their prey which, for these unfussy eaters with perpetually empty bellies, is just about anything with meat on its bones.", ""),
+    new Crab(691, 835, "Coralshell", "BFATE", "The Coral High Ground", "The Ruby Tithe is not the only manner in which pirates of the Confederacy line their coffers with coin. Some lower-ranking members are tasked with gathering beached coral for sale to Kugane's lapidaries. One such enterprising young pirate is offering a percentage of her cut to all who aid her in her search.", ""),
+    new Crab(636, 91, "Hells' Lid", "DUN", "Hellish Gasame", "3", ""),
+    new Crab(572, 135, "Gasame", "OW", "6", "", ""),
+    new Crab(816, 912, "Craklaw", "OW", "10", "", ""),
+    new Crab(845, 489, "Unkiu", "OW", "20", "", ""),
+    new Crab(400, 429, "The Adventure", "FISHUW", "Snow Crab", "", ""),
+    new Crab(756, 314, "Ruby Price Depths", "FISHUW", "Spider Crab", "", ""),
+    new Crab(666, 931, "Northern Onokoro", "FISHUW", "Ruby-spotted Crab", "", ""),
+    new Crab(547, 941, "Northwestern Onokoro", "FISHUW", "Ruby-spotted Crab", "", ""),
+    new Crab(848, 710, "Northeastern Bekko", "FISHUW", "Skipping Stone", "", "")
+];
 
-const crabsY = [];
+const crabsY = [
+    new Crab(265, 361, "The Swallow's Compass", "DUN", "River Unkiu", "3", ""),
+    new Crab(338, 102, "The One River Southwestern Riverbeds", "FISHUW", "Gauntlet Crab", "", ""),
+    new Crab(815, 117, "Imperial Hypersonic Assault Craft L-XXIII", "FISHUW", "Kamina Crab", "", ""),
+    new Crab(252, 773, "The Dragon's Struggle", "FISHUW", "Yu-no-hana Crab", "", "")
+];
 
-const crabsTAS = [];
+const crabsTAS = [
+    new Crab(677, 522, "Hak Khaal", "FISH", "Khaal Crab", "", "")
+];
 
 // EUREKA
 
-const crabsAN = [];
+const crabsAN = [
+    new Crab(252, 358, "Mighty Craklaw", "OW", "4", "", ""),
+    new Crab(696, 503, "Spangencrab", "OW", "6", "", "")
+];
 
-const crabsPA = [];
+const crabsPA = [
+    new Crab(190, 644, "King Artho, Knight Crab", "BFATE", "Morte Artho", "Woe betide an invader in this land of many kings. The latest to heed the call of his beleaguered people is the noble King Arthro, leader of knights round...and clawed.", ""),
+    new Crab(195, 614, "Val Snipper", "OW", "12", "", "")
+];
 
-const crabsPY = [];
+const crabsPY = [
+    new Crab(569, 373, "Lost Big Claw, Lost Snipper", "BFATE", "We're All Mad Here", "Whether their urge to snatch coral from atop wandering snippers should be attributed to their zeal for irritating other fauna or a simple attraction to bright colors is unclear, but the fact remains that the happy bunnies have angered an impressive number of the creatures in doing so.", ""),
+    new Crab(340, 861, "Pyros Crab", "OW", "7", "", ""),
+    new Crab(616, 426, "Stray Snipper", "OW", "11", "", ""),
+    new Crab(580, 597, "Clipper", "OW", "21", "", "")
+];
 
 // NORVRANDT + ZADNOR
 
@@ -257,7 +310,7 @@ function makeMarkers(crabList, mapname, view1, view2, zoom) {
     var map = L.map('map', {
         crs: L.CRS.Simple,
         minZoom: -0.55,
-        maxBounds: [[0,0], [1000,1000]]
+        maxBounds: [[0, 0], [1010,1010]]
     });
 
     var bounds = [[0,0], [1000,1000]];
