@@ -114,9 +114,14 @@ const crabsSS = [
     new Crab(252, 551, "Lower Hathoeva River", "FISH", "Mudcrab", "", ""),
     new Crab(496, 669, "East Hathoeva River", "FISH", "Mudcrab", "", ""),
     new Crab(666, 710, "Goblinblood", "FISH", "Mudcrab", "", ""),
+    new Crab(235, 834, "Upper Hathoeva River", "FISH", "River Crab", "", "")
 ];
 
-const crabsCS = [];
+const crabsCS = [
+    new Crab(360, 439, "Everschade", "FISH", "Mitten Crab", "", ""),
+    new Crab(337, 508, "Hopeseed Pond", "FISH", "Mudcrab", "", ""),
+    new Crab(241, 461, "Haukke Manor", "FISH", "Mudcrab", "", "")
+];
 
 const crabsNS = [];
 
