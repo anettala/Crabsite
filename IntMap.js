@@ -99,9 +99,22 @@ const crabsOLN = [
 
 // THE BLACK SHROUD
 
-const crabsES = [];
+const crabsES = [
+    new Crab(610, 517, "Sylphlands", "FISH", "Mushroom Crab", "Magicked Mushroom", ""),
+    new Crab(404, 610, "Sanctum of the Twelve", "FISH", "River Crab", "The Assassin", ""),
+    new Crab(210, 460, "Sweetbloom Pier", "FISH", "River Crab", "", ""),
+    new Crab(469, 496, "Verdant Drop", "FISH", "River Crab", "", ""),
+    new Crab(560, 406, "Spingripple Brook", "FISH", "River Crab", "", ""),
+];
 
-const crabsSS = [];
+const crabsSS = [
+    new Crab(330, 659, "Middle Hathoeva River", "FISH", "Mitten Crab", "", ""),
+    new Crab(263, 340, "Rootslake", "FISH", "Mitten Crab", "", ""),
+    new Crab(896, 590, "Urth's Gift", "FISH", "Mitten Crab", "", ""),
+    new Crab(252, 551, "Lower Hathoeva River", "FISH", "Mudcrab", "", ""),
+    new Crab(496, 669, "East Hathoeva River", "FISH", "Mudcrab", "", ""),
+    new Crab(666, 710, "Goblinblood", "FISH", "Mudcrab", "", ""),
+];
 
 const crabsCS = [];
 
@@ -201,7 +214,7 @@ const crabsSH = [];
 
 const crabsLM = [];
 
-function makeMarkers(crabList, mapname, view1, view2) {
+function makeMarkers(crabList, mapname, view1, view2, zoom) {
     document.getElementById('holdmap').innerHTML = "<div id='map'></div>";
     const img = new Image();
     img.src = "Pictures/Map/"+mapname;
@@ -214,7 +227,7 @@ function makeMarkers(crabList, mapname, view1, view2) {
     var bounds = [[0,0], [1000,1000]];
     var image = L.imageOverlay("Pictures/Map/"+mapname, bounds).addTo(map);
     map.fitBounds(bounds);
-    map.setView( [view1, view2], 0.4)
+    map.setView( [view1, view2], zoom)
 
     var added = []
     crabList.forEach(crab => {
