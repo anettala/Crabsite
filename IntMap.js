@@ -27,7 +27,9 @@ var FateIcon = new MapIcon({iconUrl: "Pictures/Map/Markers/Boss_FATE_icon.png",}
     SlayIcon = new MapIcon({iconUrl: "Pictures/Map/Markers/Slay_FATE_icon.png"}),
     Fishing = new MapIcon({iconUrl: "Pictures/Map/Markers/Fishing.png"}),
     FishingUW = new MapIcon({iconUrl: "Pictures/Map/Markers/Fishing_UW.png"}),
-    Dungeon = new MapIcon({iconUrl: "Pictures/Map/Markers/Dungeon.png"});
+    Dungeon = new MapIcon({iconUrl: "Pictures/Map/Markers/Dungeon.png"}),
+    Raid = new MapIcon({iconUrl: "Pictures/Map/Markers/Raid.png"}),
+    Variant = new MapIcon({iconUrl: "Pictures/Map/Markers/Variant.png"});
 
 class Crab {
     constructor(x, y, name, type, info, desc, fish) {
@@ -59,7 +61,7 @@ const crabsMLN = [
     new Crab(340, 660, "Shearing Sheridan", "BFATE", "Shearing is Caring", "Shearing Sheridan has been shearing his share of luckless passersby since long before the Calamity. What the megalocrab needs now is a good shell-shocking.", ""),
     new Crab(350, 720, "Spawning Megalocrab", "SFATE", "Sister Crustacean", "A spawning megalocrab will do whatever it takes to see its brood safe, and that includes slicing in half Lalafellin fishers who draw too close to the wavekin's unhatched offspring. Slay a crab, save a lad.", ""),
     new Crab(330, 640, "Megalocrab", "OW", "16", "", ""),
-    new Crab(487, 724, "Woad Whisper Canyon", "FISH", "River Crab", "")
+    new Crab(487, 724, "Woad Whisper Canyon", "FISH", "River Crab", "", "")
 ];
 
 const crabsLLN = [
@@ -79,8 +81,8 @@ const crabsWLN = [
     new Crab(665, 492, "Sastasha(Hard)", "DUN", "Cave Crab, Dripping Sallet, Beryl Crab", "1, 1, 2", ""),
     new Crab(736, 308, "Old Six-Arms", "SFATE", "(I Just) Died in Six Arms Tonight", "It is believed most crabs only live for two to three years─fewer if nearby Lominsans are hungry. There is one crab, however, that is rumored to have survived since the Fifth Astral Era, surviving on the blood of man (though no one can truly back that claim). All things must die, and Old Six-arms's time has come.", ""),
     new Crab(665, 500, "Sastasha", "DUN", "Fossilshell", "4,", ""),
-    new Crab(712, 275, "The Brewer's Beacon", "FISH", "Helmet Crab"),
-    new Crab(802, 247, "Swiftperch", "FISH", "Pebble Crab"),
+    new Crab(712, 275, "The Brewer's Beacon", "FISH", "Helmet Crab", "", ""),
+    new Crab(802, 247, "Swiftperch", "FISH", "Pebble Crab", "", ""),
 ];
 
 const crabsULN = [
@@ -115,8 +117,6 @@ const crabsET = [];
 
 const crabsST = [];
 
-const crabsNT = []; //NO CRAB
-
 // COERTHAS + MOR DHONA
 
 const crabsCCH = [];
@@ -126,6 +126,80 @@ const crabsCWH = [];
 const crabsTD = [];
 
 const crabsMD = [];
+
+// ABALATHIA'S SPINE
+
+const crabsSOC = [];
+
+const crabsAL = [];
+
+// DRAVANIA
+
+const crabsTDF = [];
+
+const crabsTCM = [];
+
+// GYR ABANIA
+
+const crabsRR = [];
+
+const crabsTF = [];
+
+const crabsTP = [];
+
+const crabsTL = [];
+
+// OTHARD
+
+const crabsTRS = [];
+
+const crabsY = [];
+
+const crabsTAS = [];
+
+// EUREKA
+
+const crabsAN = [];
+
+const crabsPA = [];
+
+const crabsPY = [];
+
+// NORVRANDT + ZADNOR
+
+const crabsLL = [];
+
+const crabsKH = [];
+
+const crabsAA = [];
+
+const crabsIM = [];
+
+const crabsTRG = [];
+
+const crabsTT = [];
+
+const crabsZ = [];
+
+// ILSABARD + ISLAND SANCTUARY
+
+const crabsGM = [];
+
+const crabsTH = [];
+
+const crabsIS = [];
+
+// DAWNTRAIL
+
+const crabsUP = [];
+
+const crabsKM = [];
+
+const crabsYT = [];
+
+const crabsSH = [];
+
+const crabsLM = [];
 
 function makeMarkers(crabList, mapname, view1, view2) {
     document.getElementById('holdmap').innerHTML = "<div id='map'></div>";
@@ -158,7 +232,9 @@ function makeMarkers(crabList, mapname, view1, view2) {
             added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:FishingUW}).bindPopup(crab.name + "<br>" + crab.info));
         } else if (crab.type === "DUN") {
             added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Dungeon}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + "Amount: " + crab.desc));
-        }   
+        } else if (crab.type === "RAID") {
+            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Dungeon}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + "Amount: " + crab.desc));
+        } 
     });
     var markers = L.layerGroup(added).addTo(map);
 
