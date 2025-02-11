@@ -29,7 +29,8 @@ var FateIcon = new MapIcon({iconUrl: "Pictures/Map/Markers/Boss_FATE_icon.png",}
     FishingUW = new MapIcon({iconUrl: "Pictures/Map/Markers/Fishing_UW.png"}),
     Dungeon = new MapIcon({iconUrl: "Pictures/Map/Markers/Dungeon.png"}),
     Raid = new MapIcon({iconUrl: "Pictures/Map/Markers/Raid.png"}),
-    Variant = new MapIcon({iconUrl: "Pictures/Map/Markers/Variant.png"});
+    Variant = new MapIcon({iconUrl: "Pictures/Map/Markers/Variant_icon.png"}),
+    DeepD = new MapIcon({iconUrl: "Pictures/Map/Markers/Deep_icon.png"})
 
 class Crab {
     constructor(x, y, name, type, info, desc, fish) {
@@ -79,14 +80,14 @@ const crabsLLN = [
 
 const crabsWLN = [
     new Crab(665, 492, "Sastasha(Hard)", "DUN", "Cave Crab, Dripping Sallet, Beryl Crab", "1, 1, 2", ""),
-    new Crab(736, 308, "Old Six-Arms", "SFATE", "(I Just) Died in Six Arms Tonight", "It is believed most crabs only live for two to three years─fewer if nearby Lominsans are hungry. There is one crab, however, that is rumored to have survived since the Fifth Astral Era, surviving on the blood of man (though no one can truly back that claim). All things must die, and Old Six-arms's time has come.", ""),
-    new Crab(665, 500, "Sastasha", "DUN", "Fossilshell", "4,", ""),
+    new Crab(736, 308, "Old Six-Arms", "BFATE", "(I Just) Died in Six Arms Tonight", "It is believed most crabs only live for two to three years─fewer if nearby Lominsans are hungry. There is one crab, however, that is rumored to have survived since the Fifth Astral Era, surviving on the blood of man (though no one can truly back that claim). All things must die, and Old Six-arms's time has come.", ""),
+    new Crab(665, 500, "Sastasha", "DUN", "Fossilshell", "4", ""),
     new Crab(712, 275, "The Brewer's Beacon", "FISH", "Helmet Crab", "", ""),
     new Crab(802, 247, "Swiftperch", "FISH", "Pebble Crab", "", ""),
 ];
 
 const crabsULN = [
-    new Crab(320, 430, "Karkinos", "SFATE", "Giant Enemy Crab", "A crab released into Bronze Lake by Qiqirn so that the beastmen might harvest its sweet eggs has grown into an uncontrollable nuisance. Not only does it not produce any eggs of its own (on the account of being a male), it also ravages the nests of the local waterfowl, devouring their eggs. Karkinos must be slain.", ""),
+    new Crab(320, 430, "Karkinos", "BFATE", "Giant Enemy Crab", "A crab released into Bronze Lake by Qiqirn so that the beastmen might harvest its sweet eggs has grown into an uncontrollable nuisance. Not only does it not produce any eggs of its own (on the account of being a male), it also ravages the nests of the local waterfowl, devouring their eggs. Karkinos must be slain.", ""),
     new Crab(657, 458, "Northeast Bronze Lake", "FISH", "Mitten Crab", "", ""),
     new Crab(308, 431, "Oakwood", "FISH", "River Crab", "", ""),
     new Crab(194, 508, "Fool Falls", "FISH", "River Crab", "", ""),
@@ -123,27 +124,57 @@ const crabsCS = [
     new Crab(241, 461, "Haukke Manor", "FISH", "Mudcrab", "", "")
 ];
 
-const crabsNS = [];
+const crabsNS = [
+    new Crab(486, 521, "Proud Creek", "FISH", "Mitten Crab", "", ""),
+    new Crab(423, 539, "Lake Tahtotl", "FISH", "Mud Crab", "", ""),
+    new Crab(623, 412, "Murmur Rills", "FISH", "River Crab", "", ""),
+];
 
 // THANALAN
 
-const crabsWT = [];
+const crabsWT = [
+    new Crab(372, 519, "Bubbly Bernie", "BFATE", "Bubble Trouble", "Several crab-loving fishers have journeyed to the Footfalls in search of a giant delicacy-to-be known to the locals as Bubbly Bernie. Unfortunately, without some help, it looks like the fishers are going to be the ones to get served.", ""),
+    new Crab(623, 500, "Loamshell", "LEVE", "From Ruins to Riches; Fields of Beans", "", ""),
+    new Crab(400, 516, "Thickshell", "OW", "9", "", ""),
+    new Crab(420, 530, "The Footfalls", "FISH", "Mudcrab", "Mud Golem", ""),
+    new Crab(360, 439, "The Silver Bazaar", "FISH", "Pebble Crab", "", ""),
+];
 
-const crabsCT = [];
+const crabsCT = [
+    new Crab(365, 682, "Cutter's Cry", "DUN", "Sandshell", "8", ""),
+    new Crab(653, 554, "The Unholy Heir", "FISH", "Mudcrab", "", ""),
+];
 
-const crabsET = [];
+const crabsET = [
+    new Crab(592, 464, "Yugr'am River", "FISH", "Mitten Crab", "", ""),
+    new Crab(314, 518, "North Drybone", "FISH", "Mud Crab", "", ""),
+    new Crab(400, 417, "South Drybone", "FISH", "Mud Crab", "", ""),
+];
 
-const crabsST = [];
+const crabsST = [
+    new Crab(595, 512, "Zahar’ak", "FISH", "Mudcrab", "", "")
+];
 
 // COERTHAS + MOR DHONA
 
-const crabsCCH = [];
+const crabsCCH = []; // NO CRAB
 
-const crabsCWH = [];
+const crabsCWH = [
+    new Crab(737, 377, "Riversmeet", "FISH", "Coerthan Crab", "", ""),
+    new Crab(823, 873, "Clearpool", "FISH", "Coerthan Crab", "", "")
+];
 
-const crabsTD = [];
+const crabsTD = [
+    new Crab(242, 150, "Diadem Grotto", "FISH", "Grade 4 Skybuilders' Cyan Crab", "", ""),
+    new Crab(248, 284, "Southern Diadem Lake", "FISH", "Grade 4 Skybuilders' Goldsmith Crab", "", "")
+];
 
-const crabsMD = [];
+const crabsMD = [
+    new Crab(665, 683, "The Keeper of the Lake", "DUN", "Harnes Snipper, Codpiece Clipper", "1, 2", ""),
+    new Crab(820, 557, "Eureka Orthos", "DEEP", "Orthos Big Claw, Orthos Craklaw", "4, 3", "51-60"),
+    new Crab(293, 740, "The Deep Tangle", "FISH", "Mitten Crab", "", ""),
+    new Crab(678, 768, "Singing Shards", "FISH", "MudCrab", "", "")
+];
 
 // ABALATHIA'S SPINE
 
@@ -251,8 +282,10 @@ function makeMarkers(crabList, mapname, view1, view2, zoom) {
         } else if (crab.type === "DUN") {
             added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Dungeon}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + "Amount: " + crab.desc));
         } else if (crab.type === "RAID") {
-            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Dungeon}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + "Amount: " + crab.desc));
-        } 
+            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Raid}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + "Amount: " + crab.desc));
+        } else if (crab.type === "DEEP") {
+            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:DeepD}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + "Amount: " + crab.desc + "<br>" + "Floors: " + crab.fish));
+        }
     });
     var markers = L.layerGroup(added).addTo(map);
 
