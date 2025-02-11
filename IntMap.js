@@ -16,7 +16,7 @@ for (i = 0; i < dropdown.length; i++) {
 var MapIcon = L.Icon.extend({
     options: {
         iconSize:     [30, 30], // size of the icon
-        iconAnchor:   [17.5, 35], // point of the icon which will correspond to marker's location
+        iconAnchor:   [15.5, 15], // point of the icon which will correspond to marker's location
         popupAnchor:  [0, -20] // point from which the popup should open relative to the iconAnchor
     }
 });
@@ -321,16 +321,20 @@ function makeMarkers(crabList, mapname, view1, view2, zoom) {
     var added = []
     crabList.forEach(crab => {
         if (crab.type === "BFATE"){
+            added.push(L.circle(L.latLng([ crab.y, crab.x ]), {color: "#f19dfa", fillColor: "#f0b2f7", fillOpacity: 0.5, radius: 17}));
             added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:FateIcon}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + crab.desc + "<br>" + crab.fish));
         } else if (crab.type === "OW") {
             added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:OwIcon}).bindPopup(crab.name + "<br>" + "Amount: " + crab.info));
         } else if (crab.type === "LEVE") {
             added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:LeveIcon}).bindPopup(crab.name + "<br>" + "Leves: " + crab.info));
         } else if (crab.type === "SFATE"){
+            added.push(L.circle(L.latLng([ crab.y, crab.x ]), {color: "#f19dfa", fillColor: "#f0b2f7", fillOpacity: 0.5, radius: 17}));
             added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:SlayIcon}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + crab.desc + "<br>" + crab.fish));
         } else if (crab.type === "FISH") {
+            added.push(L.circle(L.latLng([ crab.y, crab.x ]), {stroke: false, fillColor: "#aed9eb", fillOpacity: 0.5, radius: 15}));
             added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Fishing}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + crab.desc + "<br>" + crab.fish));
         } else if (crab.type === "FISHUW") {
+            added.push(L.circle(L.latLng([ crab.y, crab.x ]), {stroke: false, fillColor: "#aed9eb", fillOpacity: 0.5, radius: 15}));
             added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:FishingUW}).bindPopup(crab.name + "<br>" + crab.info));
         } else if (crab.type === "DUN") {
             added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Dungeon}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + "Amount: " + crab.desc));
