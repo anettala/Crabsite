@@ -269,39 +269,94 @@ const crabsPY = [
 
 // NORVRANDT + ZADNOR
 
-const crabsLL = [];
+const crabsLL = [
+    new Crab(296, 297, "The Source", "FISH", "Kholusian King Crab", "Albino Rock Crab", "")
+];
 
-const crabsKH = [];
+const crabsKH = [
+    new Crab(173, 153, "The Western Kholusian Coast", "FISH", "Blue Crab", "Kholusian King Crab", "")
 
-const crabsAA = [];
+];
 
-const crabsIM = [];
+const crabsAA = [
+    new Crab(359, 653, "The Hills of Amber", "FISH", "Garik Crab", "", ""),
+    new Crab(755, 705, "The River of Sand", "FISH", "Shadow Crab", "", ""),
+    new Crab(733, 246, "Nabaath Severance", "FISH", "Shadow Crab", "", "")
+];
 
-const crabsTRG = [];
+const crabsIM = [
+    new Crab(714, 315, "Thysm Lran", "FISH", "Paradise Crab", "", ""),
+    new Crab(708, 415, "East Longmirror Lake", "FISH", "Paradise Crab", "", "")
+];
 
-const crabsTT = [];
+const crabsTRG = [
+    new Crab(103, 395, "North Lake Tusi Mek'ta", "FISHUW", "Ankle Snipper", "Gourmand Crab", ""),
+    new Crab(153, 317, "Lake Tusi Mek'ta", "FISH", "Robber Crab", "Clawbow", ""),
+    new Crab(214, 510, "The Red Chalice", "FISH", "Clawbow", "", ""),
+    new Crab(370, 494, "The Lozatl", "FISH", "Clawbow", "", ""),
+    new Crab(566, 250, "South Mjrl's Regret", "FISH", "Robber Crab", "Clawbow", ""),
+    new Crab(168, 627, "Woven Oath", "FISH", "Clawbow", "", ""),
+    new Crab(614, 130, "Mjrl's Tears", "FISH", "Clawbow", "", ""),
+    new Crab(112, 312, "Deep Lake Tusi Mek'ta", "FISHUW", "Gourmand Crab", "", ""),
+    new Crab(208, 292, "The Covered Halls of Dwatl", "FISHUW", "Hermit Crab", "", "")
+];
 
-const crabsZ = [];
+const crabsTT = [
+    new Crab(121, 684, "West Caliban Gap", "FISH", "Yeti Crab", "Maru Crab", ""),
+    new Crab(870, 834, "Blue Swimmer", "OW", "9", "", ""),
+    new Crab(884, 677, "Trilobite", "OW", "17", "", "")
+];
+
+const crabsZ = [
+    new Crab(246, 212, "Zadnor Stoneshell", "OW", "9", "", "")
+];
 
 // ILSABARD + ISLAND SANCTUARY
 
-const crabsGM = [];
+const crabsGM = [
+    new Crab(721, 150, "Lapis Manalis", "DUN", "Albus Craklaw", "4", "")
+];
 
-const crabsTH = [];
+const crabsTH = [
+    new Crab(557, 121, "Aloalo Island", "VAR", "Aloalo Snipper, Aloalo Crab, Aloalo Sallet", "1, 3, 3", "Paths 1-4"),
+    new Crab(575, 121, "Another Aloalo Island", "VAR", "Aloalo Snipper, Aloalo Crab", "1, 2", ""),
+    new Crab(363, 206, "Alzadaal's Legacy", "DUN", "Bounty Crawklaw, Radiant Crab", "2 ,8", "Clawtrap Alzadaal XIV <333"),
+    new Crab(298, 324, "Akyaali Crab", "OW", "11", "", ""),
+    new Crab(599, 132, "Yedlihmad", "FISH", "Gwl Crab", "Lale Crab", ""),
+    new Crab(347, 125, "Southern Akyaali", "FISHUW", "Spiny King Crab", "", "")
+];
 
-const crabsIS = [];
+const crabsIS = [
+    new Crab(415, 725, "Beachcomb", "OW", "0-20 (max amount in pasture)", "", "")
+];
 
 // DAWNTRAIL
 
-const crabsUP = [];
+const crabsUP = [
+    new Crab(463, 325, "Bothersome Bigclaw", "SFATE", "Claws and Effect", "Though it remains unclear how so many bigclaws scuttled into such a small reservoir, one thing is certain: they cannot be suffered to disrupt the natural ecosystem.", "")
+];
 
-const crabsKM = [];
+const crabsKM = [
+    new Crab(153, 650, "Wandering Craklaw", "SFATE", "This Kills the Craklaw", "A violent band of craklaws has settled into the lower marshes, snipping away at all manner of plant life. It is feared that they will soon hone their claws on the House of Winds High if left unchecked, and thus the order has been given to cull the crustaceans.", ""),
+    new Crab(539, 696, "Waters Hanu", "FISH", "Plattershell", "Cazuela Crab", "")
+];
 
-const crabsYT = [];
+const crabsYT = [
+    new Crab(246, 194, "Jeuno: The First Walk", "RAID", "Aquarius, Robber Crab", "1, 2", ""),
+    new Crab(745, 852, "Iq Rrax Tsoly Depths", "FISHUW", "Iq Rrax Crab", "", ""),
+    new Crab(112, 831, "Xd'aa Talat Tsoly", "FISHUW", "Turali Land Crab", "", ""),
+    new Crab(873, 387, "Xty'iinbek Tsoly", "FISH", "Yak T'el Crab", "", "")
+];
 
-const crabsSH = [];
+const crabsSH = [
+    new Crab(688, 879, "Tender Valley", "DUN", "Valley Tumbleclaw", "2", ""),
+    new Crab(470, 488, "Tumbleclaw Kindler", "SFATE", "Claw and Order", "Tumbleclaw kindlers earn their name from doing what they do best, igniting fires─which is, admittedly, not a problem as long as they keep to damp areas such as ponds or swamps. Unfortunately, Sheshenewezi Springs is (despite the name) anything but damp, and a consortium of crabs currently marching through the place could see it all in flames if something is not done, and quick.", ""),
+    new Crab(716, 193, "Tumbleclaw", "OW", "soooo many (32)", "", "")
+];
 
-const crabsLM = [];
+const crabsLM = [
+    new Crab(726, 538, "Alexandrian Clipper", "OW", "9", "", "")
+];
 
 function makeMarkers(crabList, mapname, view1, view2, zoom) {
     document.getElementById('holdmap').innerHTML = "<div id='map'></div>";
@@ -331,17 +386,37 @@ function makeMarkers(crabList, mapname, view1, view2, zoom) {
             added.push(L.circle(L.latLng([ crab.y, crab.x ]), {color: "#f19dfa", fillColor: "#f0b2f7", fillOpacity: 0.5, radius: 17}));
             added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:SlayIcon}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + crab.desc + "<br>" + crab.fish));
         } else if (crab.type === "FISH") {
+            if (crab.desc === "") {
+                var text = crab.name + "<br>" + crab.info;
+            } else if (crab.fish === ""){
+                var text = crab.name + "<br>" + crab.info + "<br>" + crab.desc;
+            } else {
+                var text = crab.name + "<br>" + crab.info + "<br>" + crab.desc + "<br>" + crab.fish;
+            }
             added.push(L.circle(L.latLng([ crab.y, crab.x ]), {stroke: false, fillColor: "#aed9eb", fillOpacity: 0.5, radius: 15}));
-            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Fishing}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + crab.desc + "<br>" + crab.fish));
+            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Fishing, zIndexOffset: 1000}).bindPopup(text));
         } else if (crab.type === "FISHUW") {
+            if (crab.desc === "") {
+                var text = crab.name + "<br>" + crab.info;
+            } else if (crab.fish === ""){
+                var text = crab.name + "<br>" + crab.info + "<br>" + crab.desc;
+            } else {
+                var text = crab.name + "<br>" + crab.info + "<br>" + crab.desc + "<br>" + crab.fish;
+            }
             added.push(L.circle(L.latLng([ crab.y, crab.x ]), {stroke: false, fillColor: "#aed9eb", fillOpacity: 0.5, radius: 15}));
-            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:FishingUW}).bindPopup(crab.name + "<br>" + crab.info));
+            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:FishingUW, zIndexOffset: 1000}).bindPopup(text));
         } else if (crab.type === "DUN") {
-            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Dungeon}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + "Amount: " + crab.desc));
+            var text = crab.name + "<br>" + crab.info + "<br>" + "Amount: " + crab.desc;
+            if (crab.fish != "") {
+                var text = crab.name + "<br>" + crab.info + "<br>" + "Amount: " + crab.desc + "<br>" + crab.fish;
+            }
+            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Dungeon}).bindPopup(text));
         } else if (crab.type === "RAID") {
             added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Raid}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + "Amount: " + crab.desc));
         } else if (crab.type === "DEEP") {
             added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:DeepD}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + "Amount: " + crab.desc + "<br>" + "Floors: " + crab.fish));
+        } else if (crab.type === "VAR") {
+            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Variant, zIndexOffset: -100}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + "Amount: " + crab.desc + "<br>" + crab.fish));
         }
     });
     var markers = L.layerGroup(added).addTo(map);
