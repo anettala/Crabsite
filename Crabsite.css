@@ -9,10 +9,11 @@
   font-style: normal;
 }
 
-@media screen and (max-height: 450px) {
+@media only screen and (min-width: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-  .heading {flex-direction: column;}
+  .heading {flex-wrap: wrap; justify-content: center;}
+  .boxes {flex-wrap: wrap; flex-direction: column;}
 }
 
 /* ----MAIN PAGE---- */
@@ -58,7 +59,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 9%;
+  column-gap: 3%;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.6);
 }
@@ -69,8 +70,8 @@
 }
 
 .boxes .container .linked-box .overlay-text {
-  width: 350px;
-  height: 300px;
+  width: 300px;
+  height: 250px;
   position: absolute;
   text-align: center;
   align-content: center;
@@ -86,8 +87,8 @@
 }
 
 .boxes img {
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
   display: block;
 }
 
@@ -383,4 +384,38 @@
 
 .leaflet-popup-content {
   text-align: center;
+}
+
+/* --- FISH LIST --- */
+
+.cl-area-fish {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 6px;
+  flex-wrap: wrap;
+  font-size: 17px;
+}
+
+.cl-desc-fish {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  white-space: auto;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  gap: 10px;
+}
+
+.img-inf-fish {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  background: rgba(19, 16, 31, 0.8);;
+  border: solid;
+  border-color: gray;
+  border-radius: 13px;
+  border-width: 1px;
+  padding: 15px;
+  width:85%;
+  margin: 30px 20px 20px 40px;
 }
