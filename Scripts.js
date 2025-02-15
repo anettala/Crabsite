@@ -80,13 +80,17 @@ function displayExpansion() {
                 }
                 crabDiv.querySelector("#crabname").textContent = crab.name;
                 crabDiv.querySelector("#expansion").textContent = expansions[exp_short.indexOf(exp)];
-                crabDiv.querySelector("#region").textContent = "Location: " + crab.region;
-                crabDiv.querySelector("#zone").textContent = crab.zone;
-                crabDiv.querySelector("#coords").textContent = crab.coords;
-                crabDiv.querySelector("#amount").textContent = "Number: " + crab.number;
-                crabDiv.querySelector("#type").textContent = "Type: " + crab.type;
-                crabDiv.querySelector("#nametype").textContent = " - " + crab.typename;
-            
+                if (crab.coords === "") {
+                    crabDiv.querySelector("#region").innerHTML = "<b>Location:</b> " + crab.region + ", " + crab.zone;
+                } else {
+                    crabDiv.querySelector("#region").innerHTML = "<b>Location:</b> " + crab.region + ", " + crab.zone + " (" + crab.coords + ")";
+                }
+                crabDiv.querySelector("#amount").innerHTML = "<b>Number:</b> " + crab.number;
+                if (crab.typename === "") {
+                    crabDiv.querySelector("#type").innerHTML = "<b>Type:</b> " + crab.type;
+                } else {
+                    crabDiv.querySelector("#type").innerHTML = "<b>Type:</b> " + crab.type + " - " + crab.typename;
+                }
                 copyDiv.appendChild(crabDiv);
             }
         });

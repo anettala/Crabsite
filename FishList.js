@@ -52,6 +52,7 @@ function displayExpansion() {
     exampleDiv.style.display = "none";
     const exampleCrab = document.getElementById("example-crab");
     const contentDiv = document.getElementById("list-content");
+    const areaDiv = document.getElementById("region-inf");
 
     const expansions = ["A Realm Reborn", "Heavensward", "Stormblood", "Shadowbringers", "Endwalker", "Dawntrail"];
     const exp_short = ["ARR", "HW", "SB", "SHB", "EW", "DT"];
@@ -71,10 +72,37 @@ function displayExpansion() {
                 crabDiv.querySelector(".cl-img").src = "Pictures/Fish/" + crab.image;
                 crabDiv.querySelector("#crabname").textContent = crab.name;
                 crabDiv.querySelector("#patch").textContent = exp + " " + crab.patch;
-                crabDiv.querySelector("#zones").textContent = crab.zones;
-                crabDiv.querySelector("#coords").textContent = crab.coords;
                 crabDiv.querySelector("#desc1").textContent = crab.desc1;
                 crabDiv.querySelector("#desc2").textContent = crab.desc2;
+
+                const areaDiv = crabDiv.querySelector("#region-inf");
+                areaDiv.innerHTML = "";
+
+                var zone = crab.zones.split(";");
+                var coord = crab.coords.split(";");
+
+                var split = zone[0].split(":");
+                var text =  split[0].bold() + "<b>:</b>" + split[1] + " (" + coord[0] + ")";
+
+                for (let i = 1; i < zone.length; i++) {
+                    if (zone[i].includes(":")) {
+                        var addzone = document.createElement("p");
+                        addzone.innerHTML = text;
+                        areaDiv.appendChild(addzone);
+                        var split = zone[i].split(":");
+                        text = split[0].bold() + "<b>:</b>" + split[1] + " (" + coord[i] + ")";
+                    } else {
+                        text = text.concat(" | " + zone[i] + " (" + coord[i]) + ")";
+                    }
+                  }
+                
+                if (text) {
+                    var addzone = document.createElement("p");
+                    addzone.innerHTML = text;
+                    areaDiv.appendChild(addzone);
+                }
+                
+                
             
                 copyDiv.appendChild(crabDiv);
             }

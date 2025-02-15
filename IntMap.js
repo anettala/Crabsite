@@ -80,6 +80,7 @@ const crabsLLN = [
 
 const crabsWLN = [
     new Crab(665, 492, "Sastasha(Hard)", "DUN", "Cave Crab, Dripping Sallet, Beryl Crab", "1, 1, 2", ""),
+    new Crab(827, 247, "Big Claw; Pebble Crab", "LEVE", "<b>BC:</b> Grabbing Crabs <br> FC: Brain Candy", "", ""),
     new Crab(736, 308, "Old Six-Arms", "BFATE", "(I Just) Died in Six Arms Tonight", "It is believed most crabs only live for two to three years─fewer if nearby Lominsans are hungry. There is one crab, however, that is rumored to have survived since the Fifth Astral Era, surviving on the blood of man (though no one can truly back that claim). All things must die, and Old Six-arms's time has come.", ""),
     new Crab(665, 500, "Sastasha", "DUN", "Fossilshell", "4", ""),
     new Crab(712, 275, "The Brewer's Beacon", "FISH", "Helmet Crab", "", ""),
@@ -377,46 +378,46 @@ function makeMarkers(crabList, mapname, view1, view2, zoom) {
     crabList.forEach(crab => {
         if (crab.type === "BFATE"){
             added.push(L.circle(L.latLng([ crab.y, crab.x ]), {color: "#f19dfa", fillColor: "#f0b2f7", fillOpacity: 0.5, radius: 17}));
-            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:FateIcon}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + crab.desc + "<br>" + crab.fish));
+            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:FateIcon}).bindPopup("<b>" + crab.name + "</b><br>" + crab.info + "<br>" + crab.desc + "<br>" + crab.fish));
         } else if (crab.type === "OW") {
-            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:OwIcon}).bindPopup(crab.name + "<br>" + "Amount: " + crab.info));
+            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:OwIcon}).bindPopup("<b>" + crab.name + "</b><br>" + "Amount: " + crab.info));
         } else if (crab.type === "LEVE") {
-            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:LeveIcon}).bindPopup(crab.name + "<br>" + "Leves: " + crab.info));
+            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:LeveIcon}).bindPopup("<b>" + crab.name + "</b><br>" + crab.info));
         } else if (crab.type === "SFATE"){
             added.push(L.circle(L.latLng([ crab.y, crab.x ]), {color: "#f19dfa", fillColor: "#f0b2f7", fillOpacity: 0.5, radius: 17}));
-            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:SlayIcon}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + crab.desc + "<br>" + crab.fish));
+            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:SlayIcon}).bindPopup("<b>" + crab.name + "</b><br>" + crab.info + "<br>" + crab.desc + "<br>" + crab.fish));
         } else if (crab.type === "FISH") {
             if (crab.desc === "") {
-                var text = crab.name + "<br>" + crab.info;
+                var text = "<b>" + crab.name + "</b><br>" + crab.info;
             } else if (crab.fish === ""){
-                var text = crab.name + "<br>" + crab.info + "<br>" + crab.desc;
+                var text = "<b>" + crab.name + "</b><br>" + crab.info + "<br>" + crab.desc;
             } else {
-                var text = crab.name + "<br>" + crab.info + "<br>" + crab.desc + "<br>" + crab.fish;
+                var text = "<b>" + crab.name + "</b><br>" + crab.info + "<br>" + crab.desc + "<br>" + crab.fish;
             }
             added.push(L.circle(L.latLng([ crab.y, crab.x ]), {stroke: false, fillColor: "#aed9eb", fillOpacity: 0.5, radius: 15}));
             added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Fishing, zIndexOffset: 1000}).bindPopup(text));
         } else if (crab.type === "FISHUW") {
             if (crab.desc === "") {
-                var text = crab.name + "<br>" + crab.info;
+                var text = "<b>" + crab.name + "</b><br>" + crab.info;
             } else if (crab.fish === ""){
-                var text = crab.name + "<br>" + crab.info + "<br>" + crab.desc;
+                var text = "<b>" + crab.name + "</b><br>" + crab.info + "<br>" + crab.desc;
             } else {
-                var text = crab.name + "<br>" + crab.info + "<br>" + crab.desc + "<br>" + crab.fish;
+                var text = "<b>" + crab.name + "</b><br>" + crab.info + "<br>" + crab.desc + "<br>" + crab.fish;
             }
             added.push(L.circle(L.latLng([ crab.y, crab.x ]), {stroke: false, fillColor: "#aed9eb", fillOpacity: 0.5, radius: 15}));
             added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:FishingUW, zIndexOffset: 1000}).bindPopup(text));
         } else if (crab.type === "DUN") {
-            var text = crab.name + "<br>" + crab.info + "<br>" + "Amount: " + crab.desc;
+            var text = "<b>" + crab.name + "</b><br>" + crab.info + "<br>" + "Amount: " + crab.desc;
             if (crab.fish != "") {
-                var text = crab.name + "<br>" + crab.info + "<br>" + "Amount: " + crab.desc + "<br>" + crab.fish;
+                var text = "<b>" + crab.name + "</b><br>" + crab.info + "<br>" + "Amount: " + crab.desc + "<br>" + crab.fish;
             }
             added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Dungeon}).bindPopup(text));
         } else if (crab.type === "RAID") {
-            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Raid}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + "Amount: " + crab.desc));
+            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Raid}).bindPopup("<b>" + crab.name + "</b><br>" + crab.info + "<br>" + "Amount: " + crab.desc));
         } else if (crab.type === "DEEP") {
-            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:DeepD}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + "Amount: " + crab.desc + "<br>" + "Floors: " + crab.fish));
+            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:DeepD}).bindPopup("<b>" + crab.name + "</b><br>" + crab.info + "<br>" + "Amount: " + crab.desc + "<br>" + "Floors: " + crab.fish));
         } else if (crab.type === "VAR") {
-            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Variant, zIndexOffset: -100}).bindPopup(crab.name + "<br>" + crab.info + "<br>" + "Amount: " + crab.desc + "<br>" + crab.fish));
+            added.push(L.marker(L.latLng([ crab.y, crab.x ]), {icon:Variant, zIndexOffset: -100}).bindPopup("<b>" + crab.name + "</b><br>" + crab.info + "<br>" + "Amount: " + crab.desc + "<br>" + crab.fish));
         }
     });
     var markers = L.layerGroup(added).addTo(map);
