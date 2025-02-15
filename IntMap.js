@@ -1,18 +1,23 @@
 //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
+const dropdownButtons = document.querySelectorAll(".dropdown-btn");
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
+// Toggle dropdowns when buttons are clicked
+dropdownButtons.forEach(button => {
+  button.addEventListener("click", function() {
+    // Close all other dropdowns
+    dropdownButtons.forEach(otherButton => {
+      if (otherButton !== this) {
+        otherButton.classList.remove("active");
+        otherButton.nextElementSibling.classList.remove("active");
+      }
+    });
+
+    // Toggle the "active" class on the clicked button and its dropdown content
     this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
+    this.nextElementSibling.classList.toggle("active");
   });
-} 
+});
+
 var MapIcon = L.Icon.extend({
     options: {
         iconSize:     [30, 30], // size of the icon
@@ -160,7 +165,7 @@ const crabsST = [
 // COERTHAS + MOR DHONA
 
 const crabsFD = [
-    new Crab(564, 212, "Coerthan Crab", "LEVE", "<b>FC:</b> Please Halone, Tell Me I'm Still Asleep; Snipped for Spirituality (L)", "", "")
+    new Crab(453, 521, "Coerthan Crab", "LEVE", "<b>FC:</b> Please Halone, Tell Me I'm Still Asleep; Snipped for Spirituality (L)", "", "")
 ];
 
 const crabsCWH = [
@@ -275,7 +280,7 @@ const crabsPY = [
 // NORVRANDT + ZADNOR
 
 const crabsCR = [
-    new Crab(726, 538, "Paradise Crab; Gourmand Crab", "LEVE", "<b>FC:</b> Magic Mushrooms; Crab Corps", "", "")
+    new Crab(426, 594, "Paradise Crab; Gourmand Crab", "LEVE", "<b>FC:</b> Magic Mushrooms; Crab Corps", "", "")
 ];
 
 const crabsLL = [
@@ -323,7 +328,7 @@ const crabsZ = [
 // ILSABARD + ISLAND SANCTUARY + OLD SHARLAYAN
 
 const crabsOS = [
-    new Crab(726, 538, "Ruby-spotted Crab", "LEVE", "<b>FC:</b> Crabs for the Crabby", "", "")
+    new Crab(543, 384, "Ruby-spotted Crab", "LEVE", "<b>FC:</b> Crabs for the Crabby", "", "")
 ];
 
 const crabsGM = [

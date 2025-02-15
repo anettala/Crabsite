@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Crabpedia - Masterdoc</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="Crabsite.css">
         <link rel="icon" type="image/x-icon" href="Pictures/favicon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,101 +26,28 @@
         <a href="#SHB">Shadowcrab</a>
         <a href="#EW">Endcrab</a>
         <a href="#DT">Crabtrail</a>
-        <button class="dropdown-btn balthazar-regular balthazar-regular">Filter
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-container">
-            <button class="dropdown-btn balthazar-regular balthazar-regular">Type
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-container">
-                <div>
-                    <label>
-                      <input type="checkbox" id="dungeon" name="interest" value="dungeon" />
-                      Dungeon
-                    </label>
-                  </div>
-                  <div>
-                    <label>
-                      <input type="checkbox" id="raid" name="interest" value="raid" />
-                      Raid
-                    </label>
-                  </div>
-                  <div>
-                    <label>
-                      <input type="checkbox" id="fate" name="interest" value="fate" />
-                      Fate
-                    </label>
-                  </div>
-                  <div>
-                    <label>
-                      <input type="checkbox" id="hunt" name="interest" value="hunt" />
-                      Hunts
-                    </label>
-                  </div>
-                  <div>
-                    <label>
-                      <input type="checkbox" id="island" name="interest" value="island" />
-                      Island Sanctuary
-                    </label>
-                  </div>
-                  <div>
-                    <label>
-                      <input type="checkbox" id="field" name="interest" value="field" />
-                      Field Opertaion
-                    </label>
-                  </div>
-                  <div>
-                    <label>
-                      <input type="checkbox" id="leve" name="interest" value="leve" />
-                      Leve
-                    </label>
-                  </div>
-                  <div>
-                    <label>
-                      <input type="checkbox" id="quest" name="interest" value="quest" />
-                      Quest
-                    </label>
-                  </div>
-                  <div>
-                    <label>
-                      <input type="checkbox" id="maps" name="interest" value="maps" />
-                      Treasure Map
-                    </label>
-                  </div>
-                  <div>
-                    <label>
-                      <input type="checkbox" id="deep" name="interest" value="deep" />
-                      Deep Dungeon
-                    </label>
-                  </div>
-                  <div>
-                    <label>
-                      <input type="checkbox" id="diadem" name="interest" value="diadem" />
-                      The Diadem (Old)
-                    </label>
-                  </div>
-                  <div>
-                    <label>
-                      <input type="checkbox" id="variant" name="interest" value="variant" />
-                      Variant Dungeon
-                    </label>
-                  </div>
-                  <div>
-                    <label>
-                      <input type="checkbox" id="criterion" name="interest" value="criterion" />
-                      Criterion Dungeon
-                    </label>
-                  </div>
-                  <div>
-                    <label>
-                      <input type="checkbox" id="overworld" name="interest" value="overworld" />
-                      Overworld
-                    </label>
-                  </div>
-              </div>
-        </div>
+        <button class="dropdown-btn balthazar-regular">Filter
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <div class="checkboxes">
+            <label><input type="checkbox" name="type" value="Overworld">Overworld</label>
+            <label><input type="checkbox" name="type" value="Dungeon">Dungeon</label>
+            <label><input type="checkbox" name="type" value="Raid">Raid</label>
+            <label><input type="checkbox" name="type" value="Fate">Fate</label>
+            <label><input type="checkbox" name="type" value="Hunt">Hunt</label>
+            <label><input type="checkbox" name="type" value="Island Sanctuary">Island Sanctuary</label>
+            <label><input type="checkbox" name="type" value="Field operation">Field operation</label>
+            <label><input type="checkbox" name="type" value="Leve">Leve</label>
+            <label><input type="checkbox" name="type" value="Quest">Quest</label>
+            <label><input type="checkbox" name="type" value="Treasure Map">Treasure Map</label>
+            <label><input type="checkbox" name="type" value="Deep Dungeon">Deep Dungeon</label>
+            <label><input type="checkbox" name="type" value="The Diadem/Old">The Diadem/Old</label>
+            <label><input type="checkbox" name="type" value="Variant Dungeon">Variant Dungeon</label>
+            <label><input type="checkbox" name="type" value="Criterion Dungeon">Criterion Dungeon</label>
+            <label><input type="checkbox" name="type" value="Extinct">Extinct</label>
           </div>
+        </div>
     </div>
 
     <div class="list-content" id="list-content">

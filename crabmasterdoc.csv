@@ -44,7 +44,7 @@ Gravid Crab,TRUE,ARR,La Noscea,Western La Noscea,,TRUE,Overworld,,,Went extinct 
 Delta Crab,TRUE,ARR,The Black Shroud,Central Shroud; North Shroud; South Shroud,,TRUE,Overworld; Dungeon,The Mun-Tuy Cellars (1.x),,Went extinct from the Calamity,
 Island Crab,TRUE,ARR,La Noscea,Lower La Noscea; Western La Noscea,,TRUE,Overworld; Dungeon,Cassiopeia Hollow (1.0-1.23b),,Went extinct from the Calamity,
 Aquarius,TRUE,DT,Yok Tural,Yak T'el,,FALSE,Raid,Alliance raid Jeuno: The First Walk,1,,aquarius.jpg
-Valley Tumbleclaw,FALSE,DT,Xak Tural,Shaaloani,,FALSE,Dungeon,Tender Valley,2,,
+Valley Tumbleclaw,FALSE,DT,Xak Tural,Shaaloani,,FALSE,Dungeon,Tender Valley,2,,valleytumbleclaw.jpg
 Robber Crab,TRUE,DT,Yok Tural,Yak T'el,,FALSE,Raid,Alliance raid Jeuno: The First Walk,2,,robbercrab.jpg
 Territorial Tumbleclaw,TRUE,DT,Xak Tural,Shaaloani,,FALSE,Treasure Map,Br’aaxskin Treasure Map,2,,territorialtumble.png
 Wandering Craklaw,TRUE,DT,Yok Tural,Kozama'uka,X:7.4 Y:14.5,FALSE,Fate,This Kills the Craklaw,5,,wandering.png
@@ -53,10 +53,10 @@ Ogre Crab,TRUE,DT,Othard,The Ruby Sea,,FALSE,Quest,The Crate Beyond,6,,ogre.png
 Tumbleclaw Kindler,TRUE,DT,Xak Tural,Shaaloani,X:20.7 Y:22.2,FALSE,Fate,Claw and Order,7,,tumble.png
 Alexandrian Clipper,TRUE,DT,Unlost World,Living Memory,X:31 Y:20,FALSE,Overworld,,9,,alex.png
 Tumbleclaw,TRUE,DT,Xak Tural,Shaaloani,X:30.6 Y:34.5,FALSE,Overworld,,32,,tumbleclaw.png
-Aloalo Snipper,FALSE,EW,Other,Other,,FALSE,Criterion Dungeon,Another Aloalo Island,1,,
+Aloalo Snipper,FALSE,EW,Other,Other,,FALSE,Criterion Dungeon,Another Aloalo Island,1,,aloalosnipper.png
 Clawtrap Alzadaal XIV,TRUE,EW,Ilsabard,Thavnair,,FALSE,Dungeon,Alzadaal's Legacy,1,,king2.png
 Aloalo Snipper,TRUE,EW,Other,Other,,FALSE,Variant Dungeon,Paths 1-4 in Variant Dungeon Aloalo Island,1,,aloalosnipper.jpg
-Aloalo Crab,FALSE,EW,Other,Other,,FALSE,Criterion Dungeon,Another Aloalo Island,2,,
+Aloalo Crab,FALSE,EW,Other,Other,,FALSE,Criterion Dungeon,Another Aloalo Island,2,,critaloalocrab.jpg
 Albus Craklaw,TRUE,EW,Ilsabard,Garlemald,,FALSE,Dungeon,Lapis Manalis,2,,albus.png
 Bounty Crawklaw,TRUE,EW,Ilsabard,Thavnair,,FALSE,Dungeon,Alzadaal's Legacy,2,,bountycrawklaw.png
 Aloalo Sallet,TRUE,EW,Other,Other,,FALSE,Variant Dungeon,Paths 1-4 in Variant Dungeon Aloalo Island,3,,aloalosallet.jpg
