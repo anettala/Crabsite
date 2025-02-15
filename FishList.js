@@ -82,7 +82,11 @@ function displayExpansion() {
                 var coord = crab.coords.split(";");
 
                 var split = zone[0].split(":");
-                var text =  split[0].bold() + "<b>:</b>" + split[1] + " (" + coord[0] + ")";
+                if (coord[0] === "") {
+                    text = split[0].bold();
+                } else {
+                    text = split[0].bold() + "<b>:</b>" + split[1] + " (" + coord[0] + ")"; 
+                }
 
                 for (let i = 1; i < zone.length; i++) {
                     if (zone[i].includes(":")) {
@@ -90,9 +94,13 @@ function displayExpansion() {
                         addzone.innerHTML = text;
                         areaDiv.appendChild(addzone);
                         var split = zone[i].split(":");
-                        text = split[0].bold() + "<b>:</b>" + split[1] + " (" + coord[i] + ")";
+                        if (crab.coord === "") {
+                            text = split[0].bold() + "<b>:</b>" + split[1];
+                        } else {
+                            text = split[0].bold() + "<b>:</b>" + split[1] + " (" + coord[i] + ")"; 
+                        }
                     } else {
-                        text = text.concat(" | " + zone[i] + " (" + coord[i]) + ")";
+                        text = text.concat(" | " + zone[i] + " (" + coord[i]) + ")"; 
                     }
                   }
                 
