@@ -159,6 +159,10 @@ const crabsST = [
 
 // COERTHAS + MOR DHONA
 
+const crabsFD = [
+    new Crab(564, 212, "Coerthan Crab", "LEVE", "<b>FC:</b> Please Halone, Tell Me I'm Still Asleep; Snipped for Spirituality (L)", "", "")
+];
+
 const crabsCWH = [
     new Crab(737, 377, "Riversmeet", "FISH", "Coerthan Crab", "", ""),
     new Crab(823, 873, "Clearpool", "FISH", "Coerthan Crab", "", "")
@@ -270,6 +274,10 @@ const crabsPY = [
 
 // NORVRANDT + ZADNOR
 
+const crabsCR = [
+    new Crab(726, 538, "Paradise Crab; Gourmand Crab", "LEVE", "<b>FC:</b> Magic Mushrooms; Crab Corps", "", "")
+];
+
 const crabsLL = [
     new Crab(296, 297, "The Source", "FISH", "Kholusian King Crab", "Albino Rock Crab", "")
 ];
@@ -312,7 +320,11 @@ const crabsZ = [
     new Crab(246, 212, "Zadnor Stoneshell", "OW", "9", "", "")
 ];
 
-// ILSABARD + ISLAND SANCTUARY
+// ILSABARD + ISLAND SANCTUARY + OLD SHARLAYAN
+
+const crabsOS = [
+    new Crab(726, 538, "Ruby-spotted Crab", "LEVE", "<b>FC:</b> Crabs for the Crabby", "", "")
+];
 
 const crabsGM = [
     new Crab(721, 150, "Lapis Manalis", "DUN", "Albus Craklaw", "4", "")
