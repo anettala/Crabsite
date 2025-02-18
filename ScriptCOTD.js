@@ -30,12 +30,6 @@ fetch(f)
     console.log('Raw CSV Data:', csvData);
     toObjects(csvData); // Call your parser function
     getCOTD();
-    /*
-    const date = new Date();
-    const hour = date.getHours();
-    const min = date.getMinutes();
-    scheduleNextRun(hour, min, getCOTD());
-    */
   })
   .catch(error => {
     console.error('Error fetching the CSV file:', error);
@@ -53,13 +47,10 @@ function toObjects(text) {
 }
 
 function getCOTD() {
-    //var today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
-    //var seed = today.split("-").join("");
-    var index = getDailyRandomNumber();
-    //var index = getItemOfTheDay(crabs, parseInt(seed, 10));
-    //var index = getItemOfTheMinute(crabs);
+    //var index = getDailyRandomNumber();
+    var crab = getDailyItem();
 
-    var crab = crabs[index];
+    //var crab = crabs[index];
     const crabDiv = document.getElementById("cotd-content");
 
     if (crab.extinct === "FALSE") {
@@ -83,64 +74,35 @@ function getCOTD() {
     }
 }
 
-function scheduleNextRun(hour, minutes, getCOTD) {
-    const twentyFourHours = 86400000;
-    const now = new Date();
-    let eta_ms = new Date(now.getFullYear(), now.getMonth(), now.getDate(), hour, minutes, 0, 0).getTime() - now;
-    if (eta_ms < 0)
-    {
-        eta_ms += twentyFourHours;
+function shuffleArray(arr) {
+    return arr.sort(() => Math.random() - 0.5);
+}
+
+function getDailyItem() {
+    const today = new Date().toISOString().slice(0, 10); // "YYYY-MM-DD"
+    let storedData = JSON.parse(localStorage.getItem("dailyRandom"));
+
+    // If no stored data or the date has changed, update the index
+    if (!storedData || storedData.date !== today) {
+        let shuffled = storedData ? storedData.shuffled : shuffleArray([...crabs]); // Use existing shuffle or create a new one
+        let index = storedData ? storedData.index + 1 : 0;
+
+        // Reshuffle if all items have been used
+        if (index >= shuffled.length) {
+            shuffled = shuffleArray([...crabs]);
+            index = 0;
+        }
+
+        // Store updated data
+        storedData = { date: today, index, shuffled };
+        localStorage.setItem("dailyRandom", JSON.stringify(storedData));
     }
 
-    setTimeout(function() {
-        //run once
-        getCOTD();
-        // run every 24 hours from now on
-        setInterval(getCOTD, twentyFourHours);
-      }, eta_ms);
-}
-
-// Simple seeded PRNG function (Mulberry32)
-function seededRandom(seed) {
-    let t = (seed += 0x6D2B79F5);
-    t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-}
-
-// Example: Choosing an "item of the day"
-function getItemOfTheDay(items, seed) {
-    let rand = seededRandom(seed); // Generate a seeded random number
-    let index = Math.floor(rand * crabs.length);
-    return index;
+    return storedData.shuffled[storedData.index];
 }
 
 function getDailyRandomNumber() {
-    const now = new Date();
-    const midnight = new Date(now);
-    midnight.setHours(0, 0, 0, 0); // Set to 12:00:00 AM (midnight)
-
-    // Check if we're past midnight but before 2 AM (adjust as needed)
-    if (now.getHours() < 2) {
-        midnight.setDate(midnight.getDate() - 1); // Use previous day's midnight
-    }
-
-    // Check localStorage for the stored number and timestamp
-    const storedNumber = localStorage.getItem('dailyRandomNumber');
-    const storedTimestamp = localStorage.getItem('dailyRandomTimestamp');
-
-    if (storedNumber && storedTimestamp) {
-        const lastGenerated = new Date(parseInt(storedTimestamp));
-        if (now - lastGenerated < 24 * 60 * 60 * 1000) {
-            // Less than 24 hours have passed, use the stored number
-            return storedNumber;
-        }
-    }
-
-    // Generate a new random number
-    const newNumber = Math.floor(Math.random() * crabs.length) + 1; // Random number between 1 and 100
-    localStorage.setItem('dailyRandomNumber', newNumber);
-    localStorage.setItem('dailyRandomTimestamp', midnight.getTime()); // Store midnight timestamp
-
-    return newNumber;
+    const date = new Date().toDateString(); // e.g., "Mon Feb 18 2025"
+    const seed = date.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0);
+    return seed % crabs.length; // Change range as needed
 }
