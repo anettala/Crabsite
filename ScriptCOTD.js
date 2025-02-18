@@ -29,10 +29,13 @@ fetch(f)
   .then(csvData => {
     console.log('Raw CSV Data:', csvData);
     toObjects(csvData); // Call your parser function
+    getCOTD();
+    /*
     const date = new Date();
     const hour = date.getHours();
     const min = date.getMinutes();
     scheduleNextRun(hour, min, getCOTD());
+    */
   })
   .catch(error => {
     console.error('Error fetching the CSV file:', error);
@@ -50,9 +53,10 @@ function toObjects(text) {
 }
 
 function getCOTD() {
-    var today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
-    var seed = today.split("-").join("");
-    var index = getItemOfTheDay(crabs, parseInt(seed, 10));
+    //var today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+    //var seed = today.split("-").join("");
+    var index = getDailyRandomNumber();
+    //var index = getItemOfTheDay(crabs, parseInt(seed, 10));
     //var index = getItemOfTheMinute(crabs);
 
     var crab = crabs[index];
@@ -111,17 +115,32 @@ function getItemOfTheDay(items, seed) {
     return index;
 }
 
-// Function to get an "Item of the Minute"
-function getItemOfTheMinute(items) {
+function getDailyRandomNumber() {
     const now = new Date();
-    const seed = `${now.getFullYear()}${(now.getMonth() + 1)
-        .toString()
-        .padStart(2, "0")}${now.getDate().toString().padStart(2, "0")}${now
-        .getHours()
-        .toString()
-        .padStart(2, "0")}${now.getMinutes().toString().padStart(2, "0")}`; // YYYYMMDDHHMM as seed
+    const midnight = new Date(now);
+    midnight.setHours(0, 0, 0, 0); // Set to 12:00:00 AM (midnight)
 
-    let rand = seededRandom(parseInt(seed, 10)); // Generate predictable random number
-    let index = Math.floor(rand * items.length);
-    return index;
+    // Check if we're past midnight but before 2 AM (adjust as needed)
+    if (now.getHours() < 2) {
+        midnight.setDate(midnight.getDate() - 1); // Use previous day's midnight
+    }
+
+    // Check localStorage for the stored number and timestamp
+    const storedNumber = localStorage.getItem('dailyRandomNumber');
+    const storedTimestamp = localStorage.getItem('dailyRandomTimestamp');
+
+    if (storedNumber && storedTimestamp) {
+        const lastGenerated = new Date(parseInt(storedTimestamp));
+        if (now - lastGenerated < 24 * 60 * 60 * 1000) {
+            // Less than 24 hours have passed, use the stored number
+            return storedNumber;
+        }
+    }
+
+    // Generate a new random number
+    const newNumber = Math.floor(Math.random() * crabs.length) + 1; // Random number between 1 and 100
+    localStorage.setItem('dailyRandomNumber', newNumber);
+    localStorage.setItem('dailyRandomTimestamp', midnight.getTime()); // Store midnight timestamp
+
+    return newNumber;
 }

@@ -259,10 +259,25 @@
 
 .cotd-nav {
   z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  color: white;
-  font-size: 20px;
+  text-decoration: none;
+  border: solid;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  margin: 18px 25% 10px 25%;
+  padding: 15px 0px 15px 0px;
+  background: rgba(19, 16, 31, 0.8);
+}
+
+.cotd-nav a {
+  color: rgb(224, 219, 219);
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cotd-nav a:hover {
+  color: white;;
 }
 
 .cotd-box h1 {
