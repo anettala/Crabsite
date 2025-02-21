@@ -151,7 +151,6 @@ body {
 
   .heading img {
     width: 100vw;
-    height: 40%;
   }
 
   .heading .body-text {
@@ -162,19 +161,20 @@ body {
     width: 100%;
     margin: 3px;
     color: rgb(14, 14, 14);
+    padding-bottom: 20px;
   }
 
   .body-text h2 {
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bolder;
   }
 
   .body-text h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .body-text p {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: bold;
   }
 
