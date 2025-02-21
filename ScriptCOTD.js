@@ -14,26 +14,35 @@ class Crab {
 }
 
 const crabs = [];
+let randNum = null;
 
 var DELIMITER = ",";
 var NEWLINE = "\n";
 var f = "crabmasterdoc.csv";
 
-fetch(f)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+async function fetchData() {
+    try {
+      // Fetch random number JSON
+      const jsonResponse = await fetch("random_number.json");
+      if (!jsonResponse.ok) throw new Error(`HTTP error! status: ${jsonResponse.status}`);
+      const jsonData = await jsonResponse.json();
+      randNum = jsonData.number;
+      console.log("Random number:", randNum);
+  
+      // Fetch CSV file
+      const csvResponse = await fetch(f);
+      if (!csvResponse.ok) throw new Error(`HTTP error! status: ${csvResponse.status}`);
+      const csvData = await csvResponse.text();
+      
+      console.log("Raw CSV Data:", csvData);
+      toObjects(csvData);
+      getCOTD();
+    } catch (error) {
+      console.error("Error fetching data:", error);
     }
-    return response.text(); // Get the text content of the file
-  })
-  .then(csvData => {
-    console.log('Raw CSV Data:', csvData);
-    toObjects(csvData); // Call your parser function
-    getCOTD();
-  })
-  .catch(error => {
-    console.error('Error fetching the CSV file:', error);
-});
+}
+  
+fetchData();
 
 function toObjects(text) {
     if (!text) {return;}
@@ -48,7 +57,7 @@ function toObjects(text) {
 
 function getCOTD() {
     //var index = getDailyRandomNumber();
-    var crab = getDailyItem();
+    var crab = crabs[randNum];
 
     //var crab = crabs[index];
     const crabDiv = document.getElementById("cotd-content");
@@ -72,37 +81,4 @@ function getCOTD() {
     } else {
         crabDiv.querySelector("#cotd-type").textContent = crab.type + " - " + crab.typename;
     }
-}
-
-function shuffleArray(arr) {
-    return arr.sort(() => Math.random() - 0.5);
-}
-
-function getDailyItem() {
-    const today = new Date().toISOString().slice(0, 10); // "YYYY-MM-DD"
-    let storedData = JSON.parse(localStorage.getItem("dailyRandom"));
-
-    // If no stored data or the date has changed, update the index
-    if (!storedData || storedData.date !== today) {
-        let shuffled = storedData ? storedData.shuffled : shuffleArray([...crabs]); // Use existing shuffle or create a new one
-        let index = storedData ? storedData.index + 1 : 0;
-
-        // Reshuffle if all items have been used
-        if (index >= shuffled.length) {
-            shuffled = shuffleArray([...crabs]);
-            index = 0;
-        }
-
-        // Store updated data
-        storedData = { date: today, index, shuffled };
-        localStorage.setItem("dailyRandom", JSON.stringify(storedData));
-    }
-
-    return storedData.shuffled[storedData.index];
-}
-
-function getDailyRandomNumber() {
-    const date = new Date().toDateString(); // e.g., "Mon Feb 18 2025"
-    const seed = date.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0);
-    return seed % crabs.length; // Change range as needed
 }
