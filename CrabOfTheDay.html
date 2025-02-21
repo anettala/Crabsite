@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Crabpedia - COTD</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Crabsite.css">
         <link rel="icon" type="image/x-icon" href="Pictures/favicon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +13,7 @@
             body {
               background-image: url("Pictures/crystal.jpg");
               background-repeat: no-repeat;
-              background-size: fill;
+              background-size: cover;
               background-position-x: 50%;
               background-color: rgb(6, 6, 14);
             }
@@ -33,10 +34,9 @@
                     <p id="cotd-location"></p>
                 </div>
                 <div class="cotd-info">
-                    <p style="font-weight: bold;">Amount in world: </p>
                     <p id="cotd-amount"></p>
                 </div>
-                <div class="cotd-info">
+                <div class="cotd-info cotd-type">
                     <p style="font-weight: bold;">Type of content:</p>
                     <p id="cotd-type"></p>
                 </div>

@@ -9,14 +9,14 @@
   font-style: normal;
 }
 
-@media only screen and (max-width: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-  .heading {flex-wrap: wrap; justify-content: center;}
-  .boxes {flex-wrap: wrap; flex-direction: column;}
+/* ----MAIN PAGE---- */
+body {
+  background-image: url("Pictures/crystal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
 }
 
-/* ----MAIN PAGE---- */
 .heading {
   margin: auto;
   display: flex;
@@ -58,6 +58,7 @@
 .boxes {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   column-gap: 3%;
   padding: 1rem;
@@ -136,6 +137,52 @@
   }
 }
 
+@media screen and (max-width: 700px) {
+  html, body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .heading {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .heading img {
+    width: 100vw;
+    height: 40%;
+  }
+
+  .heading .body-text {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    white-space: auto;
+    width: 100%;
+    margin: 3px;
+    color: rgb(14, 14, 14);
+  }
+
+  .body-text h2 {
+    font-size: 45px;
+    font-weight: bolder;
+  }
+
+  .body-text h3 {
+    font-size: 30px;
+  }
+
+  .body-text p {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .boxes {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
 /* ----MASTERDOC PAGE---- */
 
  /* The sidebar menu */
@@ -192,6 +239,7 @@
   width: 70%;
   color: rgb(255, 255, 255);
 }
+
 .img-inf {
   margin: auto;
   display: flex;
@@ -329,6 +377,54 @@
   background: rgba(19, 16, 31, 0.8);
   border:solid;
   border-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .background-image {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .cotd-content {
+    padding: 0;  /* Removes any unwanted margins/padding */
+    margin: 0;
+    width: 100vw;  /* Full width of the screen */
+    height: 100vh;  /* Full height of the screen */
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .cotd-type {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .cotd-box {
+    padding: 0px;
+  }
+
+  .cotd-box h1 {
+    padding-bottom: 5px;
+    padding-top: 15px;
+  }
+
+  .cotd-content {
+    justify-content: center;
+    display: block;
+    padding-top: 40px;
+  }
+
+  .cotd-content img {
+    width: 100vw;
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .cotd-nav {
+    margin-top: 50px;
+  }
 }
 
 /* ----INTERACTIVE MAP---- */

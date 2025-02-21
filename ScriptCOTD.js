@@ -75,7 +75,7 @@ function getCOTD() {
     
     crabDiv.querySelector("#cotd-name").textContent = crab.name;
     crabDiv.querySelector("#cotd-location").textContent = crab.region + " - " + crab.zone + " " + crab.coords;
-    crabDiv.querySelector("#cotd-amount").textContent = crab.number;
+    crabDiv.querySelector("#cotd-amount").innerHTML = "<b>Amount in world: </b>" + crab.number;
     if (crab.typename === "") {
         crabDiv.querySelector("#cotd-type").textContent = crab.type;
     } else {
