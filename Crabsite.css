@@ -10,12 +10,6 @@
 }
 
 /* ----MAIN PAGE---- */
-body {
-  background-image: url("Pictures/crystal.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: 50%;
-}
 
 .heading {
   margin: auto;
