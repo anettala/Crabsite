@@ -2,7 +2,7 @@ name: Update Random Number
 
 on:
   schedule:
-    - cron: "0 22 * * *"  # Runs at 22:00 UTC (midnight GMT+2)
+    - cron: "50 21 * * *"  # Runs at 21:50 UTC
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
@@ -16,8 +16,7 @@ jobs:
 
       - name: Generate random number
         run: |
-          TZ="Europe/Berlin" date +"%Y-%m-%d" > date.txt
-          echo '{"date": "'$(cat date.txt)'", "number": '$(shuf -i 0-115 -n 1)'}' > random_number.json
+          echo '{"date": "'$(TZ="UTC" date -d "tomorrow" +"%Y-%m-%d")'", "number": '$(shuf -i 0-115 -n 1)'}' > random_number.json
 
       - name: Commit and push
         run: |
