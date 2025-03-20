@@ -15,7 +15,7 @@ jobs:
       - name: Generate random number
         run: |
           TZ="Europe/Berlin" date +"%Y-%m-%d" > date.txt
-          echo '{"date": "'$(cat date.txt)'", "number": '$(shuf -i 0-115 -n 1)'}' > random_number.json
+          echo '{"date": "'$(cat date.txt)'", "number": '$(shuf -i 0-120 -n 1)'}' > random_number.json
 
       - name: Commit and push
         run: |

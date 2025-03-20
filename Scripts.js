@@ -75,21 +75,10 @@ function filterCrabs(crabs, filters) {
       return Object.keys(filters).every(key => {
         if (filters[key].length === 0) return true; // No filter selected for this key
   
-        // Handle extinct filter separately
-        if (key === "extinct") {
-          return filters[key].includes(crab.extinct.toString()); // Convert boolean to string for comparison
-        }
-  
         return filters[key].includes(crab[key]); // Check if crab matches any selected filter
       });
     });
 }
-  
-
-const filters = {
-    type: Array.from(document.querySelectorAll('input[name="type"]:checked')).map(checkbox => checkbox.value),
-    expansion: Array.from(document.querySelectorAll('input[name="expansion"]:checked')).map(checkbox => checkbox.value),
-  };
 
 function displayResults(filteredCrabs) {
     const exampleDiv = document.getElementById("example");
@@ -105,6 +94,7 @@ function displayResults(filteredCrabs) {
         copyDiv.style.display = "initial";
 
         contentDiv.appendChild(copyDiv);
+        contentDiv.querySelector("#exp-start").textContent="Filter result";
         filteredCrabs.forEach(crab => {
                 exampleCrab.style.display =  "none";
                 const crabDiv = exampleCrab.cloneNode(true);
@@ -139,11 +129,20 @@ function displayResults(filteredCrabs) {
 
 function updateFilters() {
     // Get selected filter values from checkboxes
-    const filters = {
-      type: Array.from(document.querySelectorAll('input[name="type"]:checked')).map(checkbox => checkbox.value),
-      expansion: Array.from(document.querySelectorAll('input[name="expansion"]:checked')).map(checkbox => checkbox.value),
-      extinct: Array.from(document.querySelectorAll('input[name="extinct"]:checked')).map(checkbox => checkbox.value),
-    };
+    if (document.querySelector('input[name="extinct"]').checked) {
+      var filters = {
+        type: Array.from(document.querySelectorAll('input[name="type"]:checked')).map(checkbox => checkbox.value),
+        expansion: Array.from(document.querySelectorAll('input[name="expansion"]:checked')).map(checkbox => checkbox.value),
+        extinct: ["TRUE"],
+      };
+      var filteredCrabs = filterCrabs(crabs, filters);
+    } else {
+      var filters = {
+        type: Array.from(document.querySelectorAll('input[name="type"]:checked')).map(checkbox => checkbox.value),
+        expansion: Array.from(document.querySelectorAll('input[name="expansion"]:checked')).map(checkbox => checkbox.value),
+      };
+      var filteredCrabs = filterCrabs(crabs, filters);
+    }
 
     console.log("Active Filters:", filters);
   
@@ -159,9 +158,7 @@ function updateFilters() {
       displayExpansion();
       return;
     }
-  
-    // Filter the crabs
-    const filteredCrabs = filterCrabs(crabs, filters);
+    
     console.log("Filtered crabs: ", filteredCrabs);
     contentDiv.innerHTML = initialHTML;
     // Display the results
