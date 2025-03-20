@@ -2,7 +2,7 @@ name: Update Random Number
 
 on:
   schedule:
-    - cron: "0 22 * * *"  # Runs at 22:00 UTC (midnight GMT+2)
+    - cron: "50 21 * * *"  # Runs at 21:50 UTC
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
@@ -11,9 +11,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate random number
         run: |
+          echo '{"date": "'$(TZ="UTC" date -d "tomorrow" +"%Y-%m-%d")'", "number": '$(shuf -i 0-115 -n 1)'}' > random_number.json
           TZ="Europe/Berlin" date +"%Y-%m-%d" > date.txt
           echo '{"date": "'$(cat date.txt)'", "number": '$(shuf -i 0-120 -n 1)'}' > random_number.json
 
@@ -23,4 +26,4 @@ jobs:
           git config --global user.email "actions@github.com"
           git add random_number.json
           git commit -m "Updated random number"
-          git push
+          git push origin main
