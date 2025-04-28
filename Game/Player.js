@@ -23,14 +23,14 @@ export default class Player {
         this.yStandingPostition = this.y;
 
         this.standingStillImage = new Image();
-        this.standingStillImage.src = "/Game/images/crab.png";
+        this.standingStillImage.src = "./images/crab.png";
         this.image = this.standingStillImage;
 
         const runImage1 = new Image();
         const runImage2 = new Image();
 
-        runImage1.src = "/Game/images/crab_walk.png";
-        runImage2.src = "/Game/images/crab_speed.png";
+        runImage1.src = "./images/crab_walk.png";
+        runImage2.src = "./images/crab_speed.png";
 
         this.dinoRunImages.push(runImage1);
         this.dinoRunImages.push(runImage2);
