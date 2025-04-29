@@ -18,19 +18,28 @@ export default class Player {
         this.maxJumpHeight = maxJumpHeight;
         this.scaleRatio = scaleRatio;
 
-        this.x = 20 * scaleRatio;
+        this.x = 50 * scaleRatio;
         this.y = this.canvas.height - this.height - 1.5;
         this.yStandingPostition = this.y;
 
         this.standingStillImage = new Image();
-        this.standingStillImage.src = "/Game/images/crab.png";
+
+        let rnd = Math.floor(Math.random() * (100-1+1) + 1);
+        console.log(rnd);
+
+        if (rnd <= 20) {
+            this.standingStillImage.src = "./images/crab_love.png";
+        } else {
+           this.standingStillImage.src = "./images/crab.png"; 
+        }
+
         this.image = this.standingStillImage;
 
         const runImage1 = new Image();
         const runImage2 = new Image();
 
-        runImage1.src = "/Game/images/crab_walk.png";
-        runImage2.src = "/Game/images/crab_speed.png";
+        runImage1.src = "./images/crab_walk.png";
+        runImage2.src = "./images/crab_speed.png";
 
         this.dinoRunImages.push(runImage1);
         this.dinoRunImages.push(runImage2);

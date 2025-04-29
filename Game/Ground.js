@@ -11,7 +11,10 @@ export default class Ground {
         this.y = this.canvas.height - this.height;
 
         this.groundImage = new Image();
-        this.groundImage.src = "/Game/images/ground.png";
+        this.groundImage.src = "./images/ground.png";
+
+        this.bgImage = new Image();
+        this.bgImage.src = "./images/water_fish3.png";
     }
 
     update(gameSpeed, frameTimeDelta) {
@@ -19,12 +22,20 @@ export default class Ground {
     }
 
     draw() {
-        this.ctx.drawImage(this.groundImage, this.x, this.y, this.width, this.height);
+        this.ctx.drawImage(this.bgImage, this.x, 0, this.canvas.width, this.canvas.height);
+        this.ctx.drawImage(this.bgImage, this.x + this.canvas.width, 0, this.canvas.width, this.canvas.height);
+        this.ctx.drawImage(this.bgImage, this.x + (this.canvas.width*2), 0, this.canvas.width, this.canvas.height);
+        this.ctx.drawImage(this.bgImage, this.x + (this.canvas.width*3), 0, this.canvas.width, this.canvas.height);
 
+        this.ctx.drawImage(this.groundImage, this.x, this.y, this.width, this.height);
         this.ctx.drawImage(this.groundImage, this.x + this.width, this.y, this.width, this.height);
 
         if(this.x < -this.width) {
             this.x = 0;
         }
+    }
+
+    reset() {
+        this.x = 0;
     }
 }

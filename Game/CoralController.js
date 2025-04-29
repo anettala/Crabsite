@@ -2,7 +2,7 @@ import Coral from "./Coral.js";
 
 export default class CoralController {
     CORAL_INTERVAL_MIN = 500;
-    CORAL_INTERVAL_MAX = 2000;
+    CORAL_INTERVAL_MAX = 1800;
 
     nextCoralInterval = null;
     corals = [];
