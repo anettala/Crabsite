@@ -27,25 +27,24 @@ export default class CoralController {
         return Math.floor(Math.random() * (max-min+1) + min);
     }
 
-    createCoral(pos) {
+    createCoral() {
         const index = this.getRandomNumber(0, this.coralImages.length-1);
         const coralImage = this.coralImages[index];
+        const x = this.canvas.width * 1.5;
         const y = this.canvas.height - coralImage.height;
-        const coral = new Coral(this.ctx, pos, y, coralImage.width, coralImage.height, coralImage.image);
+        const coral = new Coral(this.ctx, x, y, coralImage.width, coralImage.height, coralImage.image);
+
+        if (this.getRandomNumber(1, 10) < 3) {
+            const coral2 = new Coral(this.ctx, x + coralImage.width, y, coralImage.width, coralImage.height, coralImage.image);
+            this.corals.push(coral2);
+        }
         
         this.corals.push(coral);
     }
 
     update(gameSpeed, frameTimeDelta) {
-        if (this.nextCoralInterval <= 0) {
-            const x = this.canvas.width * 1.5;
-            
-            if (this.getRandomNumber(1, 10) < 3) {
-                this.createCoral(x);
-                this.createCoral(x+90);
-            } else {
-                this.createCoral(x);
-            }
+        if (this.nextCoralInterval <= 0) {    
+            this.createCoral();
             
             this.setNextCoralTime();
         }
