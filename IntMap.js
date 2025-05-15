@@ -348,6 +348,10 @@ const crabsIS = [
     new Crab(415, 725, "Beachcomb", "OW", "0-20 (max amount in pasture)", "", "")
 ];
 
+const crabsSA = [
+    new Crab(549, 628, "Weeping Pool", "FISH", "Weeping Crab", "", "")
+];
+
 // DAWNTRAIL
 
 const crabsUP = [

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crab Clicker</title>
+    <link rel="icon" type="image/x-icon" href="../Pictures/favicon.ico">
+    <link rel="stylesheet" href="CrabC.css">
+    <script src="./CrabC.js" defer type="module"></script>
+</head>
+<body>
+    <div class="header">
+        <h2>Crab Clicker Game</h2>
+    </div>
+    <div class="gamescreen">
+        <div id="crabButton" class="crabButton">
+            <p>Score: <span id="score">0</span></p>
+            <p>Get: <span id="addable">1</span></p>
+            <button id="cookieButton">
+                <img src="./images/crab.png" alt="Click me!"/>
+            </button>
+        </div>
+        <div id="buy" class="list">
+            <div class="buyable">
+                <button class="buy" id="buy1">Buy price 10 (+1)</button>
+                <p>Currently: <span id="b1">0</span></p>
+            </div>
+            <div class="buyable">
+                <button class="buy" id="buy2">Buy price 50 (+2)</button>
+                <p>Currently: <span id="b2">0</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
