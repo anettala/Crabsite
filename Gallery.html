@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="icon" type="image/x-icon" href="../Pictures/favicon.ico">
-    <link type="text/css" rel="stylesheet" href="../node_modules/lightgallery/css/lightgallery-bundle.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.3/css/lightgallery-bundle.css" />
     <link rel="stylesheet" href="Crabsite.css">
     <style>
             body {
@@ -14,11 +14,12 @@
               background-size: contain;
             }
     </style>
-    <script src="../node_modules/lightgallery/lightgallery.umd.js"></script>
-    <script src="../node_modules/lightgallery/plugins/thumbnail/lg-thumbnail.umd.js"></script>
-    <script src="../node_modules/lightgallery/plugins/zoom/lg-zoom.umd.js"></script>
-    <script src="../node_modules/lightgallery/plugins/video/lg-video.umd.js"></script>
-    <script src="../node_modules/lightgallery/plugins/autoplay/lg-autoplay.umd.js"></script>
+    <!-- LightGallery core -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.3/lightgallery.umd.min.js"></script>
+    <!-- (Optional) LightGallery plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.3/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.3/plugins/zoom/lg-zoom.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.3/plugins/video/lg-video.umd.js"></script>
 </head>
 <body>
     <div class="month" id="feb-2025">
@@ -32,7 +33,7 @@
     </div>
     <script type="text/javascript">
         lightGallery(document.getElementById('lightgallery'), {
-            plugins: [lgZoom, lgThumbnail, lgVideo, lgAutoplay],
+            plugins: [lgZoom, lgThumbnail, lgVideo],
             licenseKey: '0000-0000-000-0000` ',
             speed: 500,
             // ... other settings
