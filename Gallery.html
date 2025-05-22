@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="icon" type="image/x-icon" href="../Pictures/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="../node_modules/lightgallery/css/lightgallery-bundle.css" />
+    <link rel="stylesheet" href="Crabsite.css">
+    <style>
+            body {
+              background-image: url("Pictures/bgmaybe.jpg");
+              background-size: contain;
+            }
+    </style>
+    <script src="../node_modules/lightgallery/lightgallery.umd.js"></script>
+    <script src="../node_modules/lightgallery/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+    <script src="../node_modules/lightgallery/plugins/zoom/lg-zoom.umd.js"></script>
+    <script src="../node_modules/lightgallery/plugins/video/lg-video.umd.js"></script>
+    <script src="../node_modules/lightgallery/plugins/autoplay/lg-autoplay.umd.js"></script>
+</head>
+<body>
+    <div class="month" id="feb-2025">
+        <h1>February 2025</h1>
+        <div class="lightgallery"></div>
+    </div>
+
+    <div class="month" id="may-2025">
+        <h1>May 2025</h1>
+        <div class="lightgallery"></div>
+    </div>
+    <script type="text/javascript">
+        lightGallery(document.getElementById('lightgallery'), {
+            plugins: [lgZoom, lgThumbnail, lgVideo, lgAutoplay],
+            licenseKey: '0000-0000-000-0000` ',
+            speed: 500,
+            // ... other settings
+        });
+    </script>
+    <script src="Gallery.js"></script>
+</body>
