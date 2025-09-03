@@ -1,19 +1,22 @@
 /* Game styling */
-* {
+
+html, body {
+    min-height: 100vh;
     margin: 0;
     padding: 0;
-}
-
-body {
+    background-image: url("images/aloalosallet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     font-family: 'Arial', sans-serif;
     background-color: #99c1d6;
 }
 
 .header {
-    padding: 50px;
+    padding: 10px;
     text-align: center;
-    background: #4141ca;
+    background: #020024;
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgb(35, 35, 126) 35%, rgba(0, 212, 255, 1) 100%);
     color: white;
     font-size: 30px;
     border-bottom: #0c1b5e;
@@ -39,24 +42,36 @@ body {
     height: 200px;
     display: inline-block;
     cursor: pointer;
-    transition: transform 0.1s, box-shadow 0.1s;
     align-items: center;
     padding: 15px;
 }
 
-.crabButton:active {
+.coinButton:active {
     transform: scale(0.9);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
 }
 
-.crabButton img {
-    width: 200px;
-    height: 200px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+.coinButton {
+    background: none;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    align-items: center;
+    padding: 15px;
+}
+
+.coinButton img {
+    width: 300px;
+    height: 300px;
 }
 
 .list {
     width: 50%;
+    display:table-row;
 }
 
 #score {
@@ -68,8 +83,7 @@ body {
 
 .buyable {
     width: 100%;
-    background-color: #696e93;
-    height: 150px;
+    background-color: #696e93ae;
     border: 2px solid;
     border-color: #000000;
 }
