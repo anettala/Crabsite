@@ -56,6 +56,9 @@ function buyableAdd(id, name) {
 
         document.getElementById(name).textContent = crab.getCurrently();
 
+        document.getElementById(`price${id+1}`).textContent =
+            `Price: ${crab.getPrice()} (+${crab.getAmount()} /click)`;
+
         console.log("Added: " + amount + " | Price: " + price);
         displayScore();
     } else {
@@ -74,6 +77,9 @@ function addPerSec(id, name) {
         crab.addCrab();
 
         document.getElementById(name).textContent = crab.getCurrently();
+
+        document.getElementById(`price${id+1}`).textContent =
+            `Price: ${crab.getPrice()} (+${crab.getAmount()} /click)`;
 
         console.log("Added: " + amount + " | Price: " + price);
         displayScore();

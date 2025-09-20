@@ -43,7 +43,9 @@ html, body {
     display: inline-block;
     cursor: pointer;
     align-items: center;
-    padding: 15px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .coinButton:active {
@@ -69,35 +71,65 @@ html, body {
     height: 300px;
 }
 
+#score {
+    font-size: 28px;
+    font-weight: bold;
+    color: #130c5e;
+}
+
 .list {
     width: 50%;
     display:table-row;
 }
 
-#score {
-    font-size: 28px;
-    font-weight: bold;
-    margin: 20px 0;
-    color: #130c5e;
+.buyable {
+    background-color: #696e93ae;
+    border: 2px solid #000000;
+
+    /* NEW */
+    display: flex;
+    align-items: center;   /* vertically center */
+    justify-content: space-between; /* spread items across */
+    gap: 10px;  /* spacing between items */
+    padding: 20px;
 }
 
-.buyable {
-    width: 100%;
-    background-color: #696e93ae;
-    border: 2px solid;
-    border-color: #000000;
+.buyable img {
+    width: 100px;
+    height: 100px;
+}
+
+.buyable p {
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .buy {
-    padding: 12px 24px;
-    font-size: 18px;
+    padding: 8px 24px;
     cursor: pointer;
     background-color: #23288e;
     color: white;
     border: none;
     border-radius: 8px;
-    margin-top: 20px;
-    transition: background-color 0.3s;}
+    transition: background-color 0.3s;
+    text-align: center;   /* align text neatly inside */
+    line-height: 1.2;
+}
+
+/* Bigger text for item name */
+.item-name {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+/* Smaller, lighter text for price */
+.item-price {
+    font-size: 16px;
+    color: #cccccc;
+    display: block;
+}
 
 .buy:hover {
     background-color: #20245d;

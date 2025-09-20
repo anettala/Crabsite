@@ -18,6 +18,6 @@ export default class Crab {
     }
 
     getPrice() {
-        return this.price;
+        return Math.floor(this.price * Math.pow(1.15, this.currently));
     }
 }
