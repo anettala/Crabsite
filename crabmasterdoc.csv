@@ -117,7 +117,8 @@ Unkiu,TRUE,SB,Othard,The Ruby Sea,X: 35.8 Y: 21.5,FALSE,Overworld,,20,,unkiu.jpg
 Unkiu,TRUE,SB,Othard,The Ruby Sea,,FALSE,Quest,Unmeasured Strength,4,,un.png,FALSE,FALSE,
 Val Snipper,TRUE,SB,Ilsabard,Pagos,X: 9 Y: 16,FALSE,Field operation,,12,,pagos1.png,FALSE,FALSE,latitude: 614 and longitude: 195.5
 Valley Tumbleclaw,TRUE,DT,Xak Tural,Shaaloani,,FALSE,Dungeon,Tender Valley,2,,valleytumbleclaw.jpg,FALSE,FALSE,latitude: 879.5 and longitude: 688.5
-Vault Crab,TRUE,DT,Unlost World,Living Memory,,FALSE,Treasure Map,Vault Oneiron,4,,,FALSE,FALSE,
+Vault Crab,TRUE,DT,Unlost World,Living Memory,,FALSE,Treasure Map,Vault Oneiron,4,,vaultcrab.png,FALSE,FALSE,
 Violet Coralshell,TRUE,SB,Othard,The Ruby Sea,,FALSE,Dungeon,Shisui of the Violet Tides,3,,violetcoral.jpg,FALSE,FALSE,latitude: 120 and longitude: 38.9
 Wandering Craklaw,TRUE,DT,Yok Tural,Kozama'uka,X:7.4 Y:14.5,FALSE,Fate,This Kills the Craklaw,5,,wandering.png,FALSE,FALSE,latitude: 650 and longitude: 153.45
+
 Warmspring Gasame,TRUE,SB,Othard,The Ruby Sea,,FALSE,Quest,The Fight for Survival,2,,warmspring.png,FALSE,FALSE,
