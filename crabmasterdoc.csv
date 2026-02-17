@@ -1,121 +1,123 @@
 Crab name,Complete,Expansion,Region,Zones,Coordinates,Extinct,Type,Name,Number,Image,ImgName,AddedToMap,New in quest,mapCoordinates
-Orthos Big Claw,FALSE,EW,Mor Dhona,Mor Dhona,,FALSE,Deep Dungeon,Eureka Orthos (Floors 51-60),4,,,FALSE,FALSE,latitude: 557 and longitude: 820.8
-Orthos Craklaw,FALSE,EW,Mor Dhona,Mor Dhona,,FALSE,Deep Dungeon,Eureka Orthos (Floors 51-60),3,,,FALSE,FALSE,latitude: 557 and longitude: 820.8
-Unkiu,FALSE,SB,Othard,The Ruby Sea,,FALSE,Quest,Of Kojin and Kami,1,Msq lvl 62,,FALSE,FALSE,
-Blue Swimmer,FALSE,SHB,Norvrandt,The Tempest,,FALSE,Quest, Waiting in the Depths,3,Msq lvl 79,,FALSE,FALSE,
-Thickshell,TRUE,ARR,Thanalan,Western Thanalan,,TRUE,Quest,Compulsory Catering (removed in 5.2),2,,,FALSE,FALSE,
-Megalocrab,TRUE,ARR,La Noscea,Middle La Noscea,,FALSE,Quest,Out to Dry,5,,megaloquest.jpg,FALSE,FALSE,
-Uncanny Tumbleclaw,TRUE,DT,Xak Tural,Shaaloani,,FALSE,Quest,Bar the Passage,14,,uncannytumble.jpg,FALSE,FALSE,
-Long-legged Akyaali Crab,TRUE,EW,Ilsabard,Thavnair,,FALSE,Quest,Steep the Legs,2,,longleggedakyaalicrab.png,FALSE,TRUE,
-Valley Tumbleclaw,TRUE,DT,Xak Tural,Shaaloani,,FALSE,Dungeon,Tender Valley,2,,valleytumbleclaw.jpg,FALSE,FALSE,latitude: 879.5 and longitude: 688.5
-Sandshell,TRUE,ARR,Thanalan,Central Thanalan,,FALSE,Dungeon,Cutter's Cry,8,,cutterscry.png,FALSE,FALSE,latitude: 682.5 and longitude: 364.8
-Sallet Crab,TRUE,ARR,La Noscea,Lower La Noscea,,FALSE,Dungeon,Hullbreaker Isle,4,,salletcrab.jpg,FALSE,FALSE,atitude: 140.3 and longitude: 635.5
-Fossilshell,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Dungeon,Sastasha,4,,sastasha.png,FALSE,FALSE,latitude: 499.3 and longitude: 665.0
-Codpiece Clipper,TRUE,ARR,Mor Dhona,Mor Dhona,,FALSE,Dungeon,The Keeper of the Lake,2,,codpiececlipper.jpg,FALSE,FALSE,latitude: 683 and longitude: 664.9
-Beryl Crab,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Dungeon,Sastasha (Hard),2,,berylcrab.jpg,FALSE,FALSE,latitude: 499.3 and longitude: 665.0
-Harness Snipper,TRUE,ARR,Mor Dhona,Mor Dhona,,FALSE,Dungeon,The Keeper of the Lake,1,,harnesssnipper.jpg,FALSE,FALSE,latitude: 683 and longitude: 664.9
-Cave Crab,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Dungeon,Sastasha (Hard),1,,cavecrab.jpg,FALSE,FALSE,latitude: 499.3 and longitude: 665.0
-Dripping Sallet,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Dungeon,Sastasha (Hard),1,,drippingsallet.jpg,FALSE,FALSE,latitude: 499.3 and longitude: 665.0
-Rock Crab,TRUE,ARR,La Noscea,Western La Noscea,,TRUE,Dungeon,Sastasha,,Deleted,,FALSE,FALSE,
-Snipper,TRUE,ARR,La Noscea,Eastern La Noscea,X: 29 Y: 35,FALSE,Fate,Crab and Go,5,,crabandgo.png,TRUE,FALSE,
-Spawning Megalocrab,TRUE,ARR,La Noscea,Middle La Noscea,X: 15 Y: 12,FALSE,Fate,Sister Crustacean,3,,sister.png,TRUE,FALSE,
-Cancer,TRUE,ARR,La Noscea,Eastern La Noscea,X: 31 Y: 35,FALSE,Fate,It's Not Lupus,1,,lupus.png,TRUE,FALSE,
-Shearing Sheridan,TRUE,ARR,La Noscea,Middle La Noscea,X: 16 Y: 14,FALSE,Fate,Shearing is Caring,1,,shearing.png,TRUE,FALSE,
-Karkinos,TRUE,ARR,La Noscea,Upper La Noscea,X: 14 Y: 24,FALSE,Fate,Giant Enemy Crab,1,,big.png,FALSE,FALSE,atitude: 430 and longitude: 320.4
-Old Six-arms,TRUE,ARR,La Noscea,Western La Noscea,X: 31.1 Y: 29.3,FALSE,Fate,(I Just) Died in Six Arms Tonight,1,,old.png,FALSE,FALSE,latitude: 308.5 and longitude: 736.1
-Bubbly Bernie,TRUE,ARR,Thanalan,Western Thanalan,X: 15.6 Y: 16.1,FALSE,Fate,Bubble Trouble,1,,bernie.jpg,FALSE,FALSE,latitude: 627 and longitude: 365.6
-Moonfire Snipper,TRUE,ARR,La Noscea,Eastern La Noscea,X: 35 Y: 25,TRUE,Fate,Snippers Gonna Snip,,Moonfire Faire (2017),,FALSE,FALSE,
-Robber Crab,TRUE,ARR,La Noscea,Eastern La Noscea,,TRUE,Fate,Our Favorite Pastime,,Only available during The Maiden's Rhapsody Event,,FALSE,FALSE,
-Dark Helmet,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Hunt,,1,,darkhelmet.png,FALSE,FALSE,
-Nahn,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Hunt,,1,,nahn.png,FALSE,FALSE,
-Bloodshore Snipper,TRUE,ARR,La Noscea,Eastern La Noscea,,FALSE,Leve,Clearing Steer; Out to Sea; Sol Survivors; Under Foot,1,,blood.png,TRUE,FALSE,
-Decoy Crab,TRUE,ARR,La Noscea,Lower La Noscea,,FALSE,Leve,Of Mice and Demons,1,,decoy.png,FALSE,FALSE,latitude: 168 and longitude: 556.9
-Moraby Stoneshell,TRUE,ARR,La Noscea,Lower La Noscea,,FALSE,Leve,Wrong and Rite,1,,mor.png,FALSE,FALSE,latitude: 168 and longitude: 556.9
-Suspicious Megalocrab,TRUE,ARR,La Noscea,Lower La Noscea,,FALSE,Leve,Claw-struck; The Deathliest Catch,1,,sus.png,FALSE,FALSE,latitude: 212 and longitude: 564.5; latitude: 212 and longitude: 564.5
-Big Claw,TRUE,ARR,La Noscea,Western La Noscea; Lower La Noscea,,FALSE,Leve,Grabbing Crabs; Claw-struck; The Deathliest Catch,1,,bigclaw.png,FALSE,FALSE,Western La Noscea: latitude: 247.625 and longitude: 826.7; Lower La Noscea: latitude: 212 and longitude: 564.5;  latitude: 212 and longitude: 564.5
-Loamshell,TRUE,ARR,Thanalan,Western Thanalan,,FALSE,Leve,From Ruins to Riches; Fields of Beans,1,,loam.png,FALSE,FALSE,latitude: 631.5 and longitude: 537.96
-Megalocrab,TRUE,ARR,La Noscea,Lower La Noscea,X: 23.7 Y: 37.6,FALSE,Overworld,,17,,megalo2.png,FALSE,FALSE,latitude: 102 and longitude: 556.9
-Megalocrab,TRUE,ARR,La Noscea,Middle La Noscea,X: 16.0 Y: 14.4,FALSE,Overworld,,16,,megalo.png,TRUE,FALSE,
-Thickshell,TRUE,ARR,Thanalan,Western Thanalan,X: 15.6 Y: 16.1,FALSE,Overworld,,9,,thickshell.jpg,FALSE,FALSE,latitude: 626 and longitude: 382.1
-Snipper,TRUE,ARR,La Noscea,Eastern La Noscea,X: 30.4 Y: 35.4,FALSE,Overworld,,8,,snipper.png,TRUE,FALSE,
-Ironshell,TRUE,ARR,The Black Shroud,East Shroud,,TRUE,Overworld,,,Went extinct from the Calamity,,FALSE,FALSE,
-Lake Crab,TRUE,ARR,The Black Shroud,East Shroud; North Shroud,,TRUE,Overworld,,,Went extinct from the Calamity,,FALSE,FALSE,
-Clipper,TRUE,ARR,La Noscea,Eastern La Noscea; Lower La Noscea; Upper La Noscea; Western La Noscea,,TRUE,Overworld,,,Went extinct from the Calamity,,FALSE,FALSE,
-Gravid Crab,TRUE,ARR,La Noscea,Western La Noscea,,TRUE,Overworld,,,Went extinct from the Calamity,,FALSE,FALSE,
-Delta Crab,TRUE,ARR,The Black Shroud,Central Shroud; North Shroud; South Shroud,,TRUE,Overworld; Dungeon,The Mun-Tuy Cellars (1.x),,Went extinct from the Calamity,,FALSE,FALSE,
-Island Crab,TRUE,ARR,La Noscea,Lower La Noscea; Western La Noscea,,TRUE,Overworld; Dungeon,Cassiopeia Hollow (1.0-1.23b),,Went extinct from the Calamity,,FALSE,FALSE,
-Molting Megalocrab,TRUE,ARR,La Noscea,Lower La Noscea,,FALSE,Quest,Axe in the Stone,11,,moltingmegalo.jpg,FALSE,FALSE,
-Island Megalocrab,TRUE,ARR,La Noscea,Lower La Noscea,,FALSE,Quest,Axe in the Stone,5,,islandmegalo.jpg,FALSE,FALSE,
-Flintshell,TRUE,ARR,The Black Shroud,South Shroud,,FALSE,Quest,Heart of the Forest,3,,flint.jpg,FALSE,FALSE,
-Hungry Snipper,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Quest,A Quick Snip	,2,,hungry.png,FALSE,FALSE,
-Gripper,TRUE,ARR,La Noscea,Eastern La Noscea,,FALSE,Quest,Get a Grip,1,,gripper.jpg,FALSE,FALSE,
-Territorial Stoneshell,TRUE,ARR,La Noscea,Other,,FALSE,Treasure Map,Boarskin Treasure Map; Goatskin Treasure Map,3,,territorialstoneshell.png,FALSE,FALSE,
-Territorial Megalocrab,TRUE,ARR,La Noscea,Other,,FALSE,Treasure Map,Peisteskin Treasure Map,3,,terry.png,FALSE,FALSE,
-Territorial Snipper,TRUE,ARR,La Noscea,Other,,FALSE,Treasure Map,Goatskin Treasure Map; Toadskin Treasure Map,1,,territorialsnipper.png,FALSE,FALSE,
-Tumbleclaw Kindler,TRUE,DT,Xak Tural,Shaaloani,X:20.7 Y:22.2,FALSE,Fate,Claw and Order,7,,tumble.png,FALSE,FALSE,latitude: 488 and longitude: 469.9
-Wandering Craklaw,TRUE,DT,Yok Tural,Kozama'uka,X:7.4 Y:14.5,FALSE,Fate,This Kills the Craklaw,5,,wandering.png,FALSE,FALSE,latitude: 650 and longitude: 153.45
-Bothersome Bigclaw,TRUE,DT,Yok Tural,Urqopacha,X:19.7 Y:28.6,FALSE,Fate,Claws and Effect,5,,bother.png,FALSE,FALSE,latitude: 325 and longitude: 462.9
-Tumbleclaw,TRUE,DT,Xak Tural,Shaaloani,X:30.6 Y:34.5,FALSE,Overworld,,32,,tumbleclaw.png,FALSE,FALSE,latitude: 193 and longitude: 716.5
-Alexandrian Clipper,TRUE,DT,Unlost World,Living Memory,X:31 Y:20,FALSE,Overworld,,9,,alex.png,FALSE,FALSE,latitude: 538.5 and longitude: 726.5
-Ogre Crab,TRUE,DT,Othard,The Ruby Sea,,FALSE,Quest,The Crate Beyond,6,,ogre.png,FALSE,FALSE,
-Robber Crab,TRUE,DT,Yok Tural,Yak T'el,,FALSE,Raid,Alliance raid Jeuno: The First Walk,2,,robbercrab.jpg,FALSE,FALSE,latitude: 194 and longitude: 246.9
-Aquarius,TRUE,DT,Yok Tural,Yak T'el,,FALSE,Raid,Alliance raid Jeuno: The First Walk,1,,aquarius.jpg,FALSE,FALSE,latitude: 194 and longitude: 246.9
-Territorial Tumbleclaw,TRUE,DT,Xak Tural,Shaaloani,,FALSE,Treasure Map,Br’aaxskin Treasure Map,2,,territorialtumble.png,FALSE,FALSE,
-Aloalo Crab,TRUE,EW,Ilsabard,Thavnair,,FALSE,Criterion Dungeon,Another Aloalo Island,2,,critaloalocrab.jpg,FALSE,FALSE,latitude: 121.625 and longitude: 582.4
-Aloalo Snipper,TRUE,EW,Ilsabard,Thavnair,,FALSE,Criterion Dungeon,Another Aloalo Island,1,,aloalosnipper.png,FALSE,FALSE,latitude: 121.625 and longitude: 582.4
-Radiant Crab,TRUE,EW,Ilsabard,Thavnair,,FALSE,Dungeon,Alzadaal's Legacy,8,,radiant.png,FALSE,FALSE,latitude: 205.75 and longitude: 363.7
-Albus Craklaw,TRUE,EW,Ilsabard,Garlemald,,FALSE,Dungeon,Lapis Manalis,2,,albus.png,FALSE,FALSE,latitude: 150 and longitude: 720.98
-Bounty Crawklaw,TRUE,EW,Ilsabard,Thavnair,,FALSE,Dungeon,Alzadaal's Legacy,2,,bountycrawklaw.png,FALSE,FALSE,latitude: 205.75 and longitude: 363.7
-Clawtrap Alzadaal XIV,TRUE,EW,Ilsabard,Thavnair,,FALSE,Dungeon,Alzadaal's Legacy,1,,king2.png,FALSE,FALSE,latitude: 205.75 and longitude: 363.7
-Beachcomb,TRUE,EW,La Noscea,Other,,FALSE,Island Sanctuary,,0-20,,island.png,FALSE,FALSE,latitude: 725 and longitude: 415.5
 Akyaali Crab,TRUE,EW,Ilsabard,Thavnair,X:13 Y:29,FALSE,Overworld,,11,,aky.png,FALSE,FALSE,latitude: 324 and longitude: 297.8
-Aloalo Sallet,TRUE,EW,Ilsabard,Thavnair,,FALSE,Variant Dungeon,Paths 1-4 in Variant Dungeon Aloalo Island,3,,aloalosallet.jpg,FALSE,FALSE,latitude: 121.625 and longitude: 582.4
+Albus Craklaw,TRUE,EW,Ilsabard,Garlemald,,FALSE,Dungeon,Lapis Manalis,2,,albus.png,FALSE,FALSE,latitude: 150 and longitude: 720.98
+Alexandrian Clipper,TRUE,DT,Unlost World,Living Memory,X:31 Y:20,FALSE,Overworld,,9,,alex.png,FALSE,FALSE,latitude: 538.5 and longitude: 726.5
+Aloalo Crab,TRUE,EW,Ilsabard,Thavnair,,FALSE,Criterion Dungeon,Another Aloalo Island,2,,critaloalocrab.jpg,FALSE,FALSE,latitude: 121.625 and longitude: 582.4
 Aloalo Crab,TRUE,EW,Ilsabard,Thavnair,,FALSE,Variant Dungeon,Paths 1-4 in Variant Dungeon Aloalo Island,3,,aloalocrab.jpg,FALSE,FALSE,latitude: 121.625 and longitude: 582.4
+Aloalo Sallet,TRUE,EW,Ilsabard,Thavnair,,FALSE,Variant Dungeon,Paths 1-4 in Variant Dungeon Aloalo Island,3,,aloalosallet.jpg,FALSE,FALSE,latitude: 121.625 and longitude: 582.4
+Aloalo Snipper,TRUE,EW,Ilsabard,Thavnair,,FALSE,Criterion Dungeon,Another Aloalo Island,1,,aloalosnipper.png,FALSE,FALSE,latitude: 121.625 and longitude: 582.4
 Aloalo Snipper,TRUE,EW,Ilsabard,Thavnair,,FALSE,Variant Dungeon,Paths 1-4 in Variant Dungeon Aloalo Island,1,,aloalosnipper.jpg,FALSE,FALSE,latitude: 121.625 and longitude: 582.4
-Lava Crab,TRUE,HW,Dravania,Churning Mists,,FALSE,Dungeon,Sohm Al (Hard),3,,lava.png,FALSE,FALSE,latitude: 171.25 and longitude: 583.7
-Mythrite Shell,TRUE,HW,Abalathia's Spine,Sea of Clouds,,FALSE,Dungeon,Neverreap,3,,mythriteshell.jpg,FALSE,FALSE,latitude: 838.5 and longitude: 909.1
-Peckish Snipper,TRUE,HW,La Noscea,Eastern La Noscea,,FALSE,Quest,Blood on the Sands,13,,peckish.png,FALSE,FALSE,
+Aquarius,TRUE,DT,Yok Tural,Yak T'el,,FALSE,Raid,Alliance raid Jeuno: The First Walk,1,,aquarius.jpg,FALSE,FALSE,latitude: 194 and longitude: 246.9
+Beachcomb,TRUE,EW,La Noscea,Other,,FALSE,Island Sanctuary,,0-20,,island.png,FALSE,FALSE,latitude: 725 and longitude: 415.5
+Beryl Crab,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Dungeon,Sastasha (Hard),2,,berylcrab.jpg,FALSE,FALSE,latitude: 499.3 and longitude: 665.0
+Big Claw,TRUE,ARR,La Noscea,Western La Noscea; Lower La Noscea,,FALSE,Leve,Grabbing Crabs; Claw-struck; The Deathliest Catch,1,,bigclaw.png,FALSE,FALSE,Western La Noscea: latitude: 247.625 and longitude: 826.7; Lower La Noscea: latitude: 212 and longitude: 564.5;  latitude: 212 and longitude: 564.5
+Big Claw,TRUE,SHB,Norvrandt,Kholusia,X: 8.1 Y: 32.1,FALSE,Overworld,,9,,claw.png,FALSE,FALSE,latitude: 210.5 and longitude: 172.98
+Bloated Big Claw,TRUE,SHB,Norvrandt,Kholusia,,FALSE,Quest,A Clam to Die For,1,,bloated.png,FALSE,FALSE,
+Bloodshore Snipper,TRUE,ARR,La Noscea,Eastern La Noscea,,FALSE,Leve,Clearing Steer; Out to Sea; Sol Survivors; Under Foot,1,,blood.png,TRUE,FALSE,
+Blue Swimmer,FALSE,SHB,Norvrandt,The Tempest,,FALSE,Quest, Waiting in the Depths,3,Msq lvl 79,,FALSE,FALSE,
+Blue Swimmer,TRUE,SHB,Norvrandt,The Tempest,X: 36 Y: 8,FALSE,Overworld,,9,,blue.png,FALSE,FALSE,latitude: 834.5 and longitude: 870.0
+Blue Unkiu,TRUE,SB,Othard,The Ruby Sea,,FALSE,Dungeon,Shisui of the Violet Tides,1,,blueunkiu.jpg,FALSE,FALSE,latitude: 120 and longitude: 38.9
+Bothersome Bigclaw,TRUE,DT,Yok Tural,Urqopacha,X:19.7 Y:28.6,FALSE,Fate,Claws and Effect,5,,bother.png,FALSE,FALSE,latitude: 325 and longitude: 462.9
+Bounty Crawklaw,TRUE,EW,Ilsabard,Thavnair,,FALSE,Dungeon,Alzadaal's Legacy,2,,bountycrawklaw.png,FALSE,FALSE,latitude: 205.75 and longitude: 363.7
+Bubbly Bernie,TRUE,ARR,Thanalan,Western Thanalan,X: 15.6 Y: 16.1,FALSE,Fate,Bubble Trouble,1,,bernie.jpg,FALSE,FALSE,latitude: 627 and longitude: 365.6
+Canal Coralshell,TRUE,SB,Other,Other,,FALSE,Treasure Map,The Hidden Canals of Uznair; The Lost Canals of Uznair,3,,canalcoralshell.png,FALSE,FALSE,
+Canal Crab,TRUE,SB,Other,Other,,FALSE,Treasure Map,The Hidden Canals of Uznair; The Lost Canals of Uznair,4,,canalcrab.png,FALSE,FALSE,
+Canal Craklaw,TRUE,SB,Other,Other,,FALSE,Treasure Map,The Hidden Canals of Uznair; The Lost Canals of Uznair,3,,canal.png,FALSE,FALSE,
+Cancer,TRUE,ARR,La Noscea,Eastern La Noscea,X: 31 Y: 35,FALSE,Fate,It's Not Lupus,1,,lupus.png,TRUE,FALSE,
+Cave Crab,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Dungeon,Sastasha (Hard),1,,cavecrab.jpg,FALSE,FALSE,latitude: 499.3 and longitude: 665.0
+Clawtrap Alzadaal XIV,TRUE,EW,Ilsabard,Thavnair,,FALSE,Dungeon,Alzadaal's Legacy,1,,king2.png,FALSE,FALSE,latitude: 205.75 and longitude: 363.7
+Clipper,TRUE,ARR,La Noscea,Eastern La Noscea; Lower La Noscea; Upper La Noscea; Western La Noscea,,TRUE,Overworld,,,Went extinct from the Calamity,,FALSE,FALSE,
+Clipper,TRUE,DT,Yok Tural,Yak T'el,,FALSE,Raid,San d'Oria: The Second Walk,2,,,FALSE,FALSE,
+Clipper,TRUE,SB,Ilsabard,Pyros,X: 23.7 Y: 16.3,FALSE,Field operation,,21,,clipper.png,FALSE,FALSE,latitude: 597 and longitude: 567.9
+Codpiece Clipper,TRUE,ARR,Mor Dhona,Mor Dhona,,FALSE,Dungeon,The Keeper of the Lake,2,,codpiececlipper.jpg,FALSE,FALSE,latitude: 683 and longitude: 664.9
+Coralshell,TRUE,SB,Othard,The Ruby Sea,X: 28.9 Y: 7.3,FALSE,Fate,The Coral High Ground,3,,coralshell2.png,FALSE,FALSE,latitude: 835.25 and longitude: 691.5
+Craklaw,TRUE,SB,La Noscea,Other,,FALSE,Dungeon,The Sirensong Sea,2,,craklaw(siren).jpg,FALSE,FALSE,
+Craklaw,TRUE,SB,Othard,The Ruby Sea,X: 33.5 Y: 4.7,FALSE,Overworld,,10,,coralshell.jpg,FALSE,FALSE,latitude: 912 and longitude: 816.0
 Cutter,TRUE,HW,Other,Other,,TRUE,The Diadem/Old,,,Deleted content,,FALSE,FALSE,
-Silvershell,TRUE,HW,Other,Other,,TRUE,The Diadem/Old,,,Deleted content,,FALSE,FALSE,
-Polis Sallet,TRUE,HW,Other,Other,,FALSE,Treasure Map,The Aquapolis,12,,polis.png,FALSE,FALSE,
-Polis Shell,TRUE,HW,Other,Other,,FALSE,Treasure Map,The Aquapolis,2,,polisshell.png,FALSE,FALSE,
-Polis Snipper,TRUE,HW,Other,Other,,FALSE,Treasure Map,The Aquapolis,1,,polissnipper (1).png,FALSE,FALSE,
+Dark Helmet,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Hunt,,1,,darkhelmet.png,FALSE,FALSE,
+Deacon,TRUE,SHB,Norvrandt,The Tempest,,FALSE,Hunt,,1,,deacon.png,FALSE,FALSE,
+Decoy Crab,TRUE,ARR,La Noscea,Lower La Noscea,,FALSE,Leve,Of Mice and Demons,1,,decoy.png,FALSE,FALSE,latitude: 168 and longitude: 556.9
+Delta Crab,TRUE,ARR,The Black Shroud,Central Shroud; North Shroud; South Shroud,,TRUE,Overworld; Dungeon,The Mun-Tuy Cellars (1.x),,Went extinct from the Calamity,,FALSE,FALSE,
+Drawn Gasame,TRUE,SB,Othard,The Ruby Sea,,FALSE,Quest,Tonight We Dine in Shells	,1,,dawn.png,FALSE,FALSE,
+Dripping Sallet,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Dungeon,Sastasha (Hard),1,,drippingsallet.jpg,FALSE,FALSE,latitude: 499.3 and longitude: 665.0
+Flintshell,TRUE,ARR,The Black Shroud,South Shroud,,FALSE,Quest,Heart of the Forest,3,,flint.jpg,FALSE,FALSE,
+Fossilshell,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Dungeon,Sastasha,4,,sastasha.png,FALSE,FALSE,latitude: 499.3 and longitude: 665.0
+Gasame,TRUE,SB,Othard,The Ruby Sea,X: 24.7 Y: 36.6,FALSE,Overworld,,6,,gasame.jpg,FALSE,FALSE,latitude: 135.5 and longitude: 571.9
+Giant Coralshell,TRUE,SB,Othard,The Ruby Sea,,FALSE,Quest,Not Just Any Banquet,2,,quest.png,FALSE,FALSE,
+Gravid Crab,TRUE,ARR,La Noscea,Western La Noscea,,TRUE,Overworld,,,Went extinct from the Calamity,,FALSE,FALSE,
+Gripper,TRUE,ARR,La Noscea,Eastern La Noscea,,FALSE,Quest,Get a Grip,1,,gripper.jpg,FALSE,FALSE,
+Harness Snipper,TRUE,ARR,Mor Dhona,Mor Dhona,,FALSE,Dungeon,The Keeper of the Lake,1,,harnesssnipper.jpg,FALSE,FALSE,latitude: 683 and longitude: 664.9
 Heavenly Coralshell,TRUE,SB,Othard,The Ruby Sea,,FALSE,Deep Dungeon,Heaven-on-High (Floors 1-10),1,,hoh.png,FALSE,FALSE,latitude: 802.75 and longitude: 495.8
 Heavenly Unkiu,TRUE,SB,Othard,The Ruby Sea,,FALSE,Deep Dungeon,Heaven-on-High (Floors 11-20),1,,hoh2.png,FALSE,FALSE,latitude: 802.75 and longitude: 495.8
 Hellish Gasame,TRUE,SB,Othard,The Ruby Sea,,FALSE,Dungeon,Hells' Lid,5,,hellishgasame.jpg,FALSE,FALSE,latitude: 91 and longitude: 635.97
-Violet Coralshell,TRUE,SB,Othard,The Ruby Sea,,FALSE,Dungeon,Shisui of the Violet Tides,3,,violetcoral.jpg,FALSE,FALSE,latitude: 120 and longitude: 38.9
-River Unkiu,TRUE,SB,Othard,Yanxia,,FALSE,Dungeon,The Swallow's Compass,3,,riverunkiu.jpg,FALSE,FALSE,latitude: 361 and longitude: 264.9
-Craklaw,TRUE,SB,La Noscea,Other,,FALSE,Dungeon,The Sirensong Sea,2,,craklaw(siren).jpg,FALSE,FALSE,
-Blue Unkiu,TRUE,SB,Othard,The Ruby Sea,,FALSE,Dungeon,Shisui of the Violet Tides,1,,blueunkiu.jpg,FALSE,FALSE,latitude: 120 and longitude: 38.9
-Lost Snipper,TRUE,SB,Ilsabard,Pyros,X: 24.1 Y: 26.2,FALSE,Fate,We're All Mad Here,8,,oeh.png,FALSE,FALSE,latitude: 373 and longitude: 569.0
-Coralshell,TRUE,SB,Othard,The Ruby Sea,X: 28.9 Y: 7.3,FALSE,Fate,The Coral High Ground,3,,coralshell2.png,FALSE,FALSE,latitude: 835.25 and longitude: 691.5
-Unkiu,TRUE,SB,Othard,The Ruby Sea,X: 29 Y:34,FALSE,Fate,Crab Mentality,2,,unkiufate.jpg,FALSE,FALSE,latitude: 172.5 and longitude: 703.5
+Hooked Unkiu,TRUE,SB,Othard,The Ruby Sea,,FALSE,Quest,A Glimmer of Hope,1,,hook.png,FALSE,FALSE,
+Hungry Snipper,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Quest,A Quick Snip	,2,,hungry.png,FALSE,FALSE,
+Ironshell,TRUE,ARR,The Black Shroud,East Shroud,,TRUE,Overworld,,,Went extinct from the Calamity,,FALSE,FALSE,
+Island Crab,TRUE,ARR,La Noscea,Lower La Noscea; Western La Noscea,,TRUE,Overworld; Dungeon,Cassiopeia Hollow (1.0-1.23b),,Went extinct from the Calamity,,FALSE,FALSE,
+Island Megalocrab,TRUE,ARR,La Noscea,Lower La Noscea,,FALSE,Quest,Axe in the Stone,5,,islandmegalo.jpg,FALSE,FALSE,
+Karkinos,TRUE,ARR,La Noscea,Upper La Noscea,X: 14 Y: 24,FALSE,Fate,Giant Enemy Crab,1,,big.png,FALSE,FALSE,atitude: 430 and longitude: 320.4
 King Artho,TRUE,SB,Ilsabard,Pagos,X: 8.5 Y: 15.5,FALSE,Fate,Morte Artho,1,,king.png,FALSE,FALSE,latitude: 644.25 and longitude: 189.9
 Knight Crab,TRUE,SB,Ilsabard,Pagos,X: 8.5 Y: 15.5,FALSE,Fate,Morte Artho,1,,x.png,FALSE,FALSE,latitude: 644.25 and longitude: 189.9
+Lake Crab,TRUE,ARR,The Black Shroud,East Shroud; North Shroud,,TRUE,Overworld,,,Went extinct from the Calamity,,FALSE,FALSE,
+Lava Crab,TRUE,HW,Dravania,Churning Mists,,FALSE,Dungeon,Sohm Al (Hard),3,,lava.png,FALSE,FALSE,latitude: 171.25 and longitude: 583.7
+Loamshell,TRUE,ARR,Thanalan,Western Thanalan,,FALSE,Leve,From Ruins to Riches; Fields of Beans,1,,loam.png,FALSE,FALSE,latitude: 631.5 and longitude: 537.96
+Long-legged Akyaali Crab,TRUE,EW,Ilsabard,Thavnair,,FALSE,Quest,Steep the Legs,2,,longleggedakyaalicrab.png,FALSE,TRUE,
 Lost Big Claw,TRUE,SB,Ilsabard,Pyros,X: 24.1 Y: 26.2,FALSE,Fate,We're All Mad Here,1,,lost.png,FALSE,FALSE,latitude: 373 and longitude: 569.0
-Mishirushi,TRUE,SB,Othard,The Ruby Sea,X: 31 Y: 25,FALSE,Fate,Soak Up the Sun,1,,mishirushi.jpg,FALSE,FALSE,latitude: 387.25 and longitude: 732.96
-Clipper,TRUE,SB,Ilsabard,Pyros,X: 23.7 Y: 16.3,FALSE,Field operation,,21,,clipper.png,FALSE,FALSE,latitude: 597 and longitude: 567.9
-Val Snipper,TRUE,SB,Ilsabard,Pagos,X: 9 Y: 16,FALSE,Field operation,,12,,pagos1.png,FALSE,FALSE,latitude: 614 and longitude: 195.5
-Stray Snipper,TRUE,SB,Ilsabard,Pyros,X: 26.1 Y: 25.6,FALSE,Field operation,,11,,stray.png,FALSE,FALSE,latitude: 425.75 and longitude: 616.7
-Pyros Crab,TRUE,SB,Ilsabard,Pyros,X: 14.5 Y: 6.8,FALSE,Field operation,,7,,pyros.png,FALSE,FALSE,latitude: 861.5 and longitude: 340.5
-Spangencrab,TRUE,SB,Ilsabard,Anemos,X: 29 Y: 21,FALSE,Field operation,,6,,anemos1.png,FALSE,FALSE,latitude: 503 and longitude: 695.5
-Mighty Craklaw,TRUE,SB,Ilsabard,Anemos,X: 11 Y: 27,FALSE,Field operation,,4,,anemos2.png,FALSE,FALSE,latitude: 358.5 and longitude: 252.5
-Unkiu,TRUE,SB,Othard,The Ruby Sea,X: 35.8 Y: 21.5,FALSE,Overworld,,20,,unkiu.jpg,FALSE,FALSE,latitude: 488.75 and longitude: 844.8
-Craklaw,TRUE,SB,Othard,The Ruby Sea,X: 33.5 Y: 4.7,FALSE,Overworld,,10,,coralshell.jpg,FALSE,FALSE,latitude: 912 and longitude: 816.0
-Gasame,TRUE,SB,Othard,The Ruby Sea,X: 24.7 Y: 36.6,FALSE,Overworld,,6,,gasame.jpg,FALSE,FALSE,latitude: 135.5 and longitude: 571.9
-Unkiu,TRUE,SB,Othard,The Ruby Sea,,FALSE,Quest,Unmeasured Strength,4,,un.png,FALSE,FALSE,
-Giant Coralshell,TRUE,SB,Othard,The Ruby Sea,,FALSE,Quest,Not Just Any Banquet,2,,quest.png,FALSE,FALSE,
+Lost Snipper,TRUE,SB,Ilsabard,Pyros,X: 24.1 Y: 26.2,FALSE,Fate,We're All Mad Here,8,,oeh.png,FALSE,FALSE,latitude: 373 and longitude: 569.0
 Man-eating Gasame,TRUE,SB,Othard,The Ruby Sea,,FALSE,Quest,Tonight We Dine in Shells	,2,,man.png,FALSE,FALSE,
-Warmspring Gasame,TRUE,SB,Othard,The Ruby Sea,,FALSE,Quest,The Fight for Survival,2,,warmspring.png,FALSE,FALSE,
-Drawn Gasame,TRUE,SB,Othard,The Ruby Sea,,FALSE,Quest,Tonight We Dine in Shells	,1,,dawn.png,FALSE,FALSE,
-Hooked Unkiu,TRUE,SB,Othard,The Ruby Sea,,FALSE,Quest,A Glimmer of Hope,1,,hook.png,FALSE,FALSE,
-Canal Crab,TRUE,SB,Other,Other,,FALSE,Treasure Map,The Hidden Canals of Uznair; The Lost Canals of Uznair,4,,canalcrab.png,FALSE,FALSE,
-Canal Coralshell,TRUE,SB,Other,Other,,FALSE,Treasure Map,The Hidden Canals of Uznair; The Lost Canals of Uznair,3,,canalcoralshell.png,FALSE,FALSE,
-Canal Craklaw,TRUE,SB,Other,Other,,FALSE,Treasure Map,The Hidden Canals of Uznair; The Lost Canals of Uznair,3,,canal.png,FALSE,FALSE,
-Territorial Coralshell,TRUE,SB,Other,Other,,FALSE,Treasure Map,SB Treasure Maps,1,,territorial.png,FALSE,FALSE,
+Megalocrab,TRUE,ARR,La Noscea,Middle La Noscea,,FALSE,Quest,Out to Dry,5,,megaloquest.jpg,FALSE,FALSE,
+Megalocrab,TRUE,ARR,La Noscea,Lower La Noscea,X: 23.7 Y: 37.6,FALSE,Overworld,,17,,megalo2.png,FALSE,FALSE,latitude: 102 and longitude: 556.9
+Megalocrab,TRUE,ARR,La Noscea,Middle La Noscea,X: 16.0 Y: 14.4,FALSE,Overworld,,16,,megalo.png,TRUE,FALSE,
+Mighty Craklaw,TRUE,SB,Ilsabard,Anemos,X: 11 Y: 27,FALSE,Field operation,,4,,anemos2.png,FALSE,FALSE,latitude: 358.5 and longitude: 252.5
+Mishirushi,TRUE,SB,Othard,The Ruby Sea,X: 31 Y: 25,FALSE,Fate,Soak Up the Sun,1,,mishirushi.jpg,FALSE,FALSE,latitude: 387.25 and longitude: 732.96
+Molting Megalocrab,TRUE,ARR,La Noscea,Lower La Noscea,,FALSE,Quest,Axe in the Stone,11,,moltingmegalo.jpg,FALSE,FALSE,
+Moonfire Snipper,TRUE,ARR,La Noscea,Eastern La Noscea,X: 35 Y: 25,TRUE,Fate,Snippers Gonna Snip,,Moonfire Faire (2017),,FALSE,FALSE,
+Moraby Stoneshell,TRUE,ARR,La Noscea,Lower La Noscea,,FALSE,Leve,Wrong and Rite,1,,mor.png,FALSE,FALSE,latitude: 168 and longitude: 556.9
+Mythrite Shell,TRUE,HW,Abalathia's Spine,Sea of Clouds,,FALSE,Dungeon,Neverreap,3,,mythriteshell.jpg,FALSE,FALSE,latitude: 838.5 and longitude: 909.1
+Nahn,TRUE,ARR,La Noscea,Western La Noscea,,FALSE,Hunt,,1,,nahn.png,FALSE,FALSE,
+Ogre Crab,TRUE,DT,Othard,The Ruby Sea,,FALSE,Quest,The Crate Beyond,6,,ogre.png,FALSE,FALSE,
+Old Six-arms,TRUE,ARR,La Noscea,Western La Noscea,X: 31.1 Y: 29.3,FALSE,Fate,(I Just) Died in Six Arms Tonight,1,,old.png,FALSE,FALSE,latitude: 308.5 and longitude: 736.1
+Orthos Big Claw,FALSE,EW,Mor Dhona,Mor Dhona,,FALSE,Deep Dungeon,Eureka Orthos (Floors 51-60),4,,,FALSE,FALSE,latitude: 557 and longitude: 820.8
+Orthos Craklaw,FALSE,EW,Mor Dhona,Mor Dhona,,FALSE,Deep Dungeon,Eureka Orthos (Floors 51-60),3,,,FALSE,FALSE,latitude: 557 and longitude: 820.8
+Peckish Snipper,TRUE,HW,La Noscea,Eastern La Noscea,,FALSE,Quest,Blood on the Sands,13,,peckish.png,FALSE,FALSE,
+Polis Sallet,TRUE,HW,Other,Other,,FALSE,Treasure Map,The Aquapolis,12,,polis.png,FALSE,FALSE,
+Polis Shell,TRUE,HW,Other,Other,,FALSE,Treasure Map,The Aquapolis,2,,polisshell.png,FALSE,FALSE,
+Polis Snipper,TRUE,HW,Other,Other,,FALSE,Treasure Map,The Aquapolis,1,,polissnipper (1).png,FALSE,FALSE,
+Pyros Crab,TRUE,SB,Ilsabard,Pyros,X: 14.5 Y: 6.8,FALSE,Field operation,,7,,pyros.png,FALSE,FALSE,latitude: 861.5 and longitude: 340.5
+Radiant Crab,TRUE,EW,Ilsabard,Thavnair,,FALSE,Dungeon,Alzadaal's Legacy,8,,radiant.png,FALSE,FALSE,latitude: 205.75 and longitude: 363.7
+River Unkiu,TRUE,SB,Othard,Yanxia,,FALSE,Dungeon,The Swallow's Compass,3,,riverunkiu.jpg,FALSE,FALSE,latitude: 361 and longitude: 264.9
+Robber Crab,TRUE,ARR,La Noscea,Eastern La Noscea,,TRUE,Fate,Our Favorite Pastime,,Only available during The Maiden's Rhapsody Event,,FALSE,FALSE,
+Robber Crab,TRUE,DT,Yok Tural,Yak T'el,,FALSE,Raid,Alliance raid Jeuno: The First Walk,2,,robbercrab.jpg,FALSE,FALSE,latitude: 194 and longitude: 246.9
+Rock Crab,TRUE,ARR,La Noscea,Western La Noscea,,TRUE,Dungeon,Sastasha,,Deleted,,FALSE,FALSE,
+Sallet Crab,TRUE,ARR,La Noscea,Lower La Noscea,,FALSE,Dungeon,Hullbreaker Isle,4,,salletcrab.jpg,FALSE,FALSE,atitude: 140.3 and longitude: 635.5
+Sandshell,TRUE,ARR,Thanalan,Central Thanalan,,FALSE,Dungeon,Cutter's Cry,8,,cutterscry.png,FALSE,FALSE,latitude: 682.5 and longitude: 364.8
+Shearing Sheridan,TRUE,ARR,La Noscea,Middle La Noscea,X: 16 Y: 14,FALSE,Fate,Shearing is Caring,1,,shearing.png,TRUE,FALSE,
+Silvershell,TRUE,HW,Other,Other,,TRUE,The Diadem/Old,,,Deleted content,,FALSE,FALSE,
+Snipper,TRUE,ARR,La Noscea,Eastern La Noscea,X: 29 Y: 35,FALSE,Fate,Crab and Go,5,,crabandgo.png,TRUE,FALSE,
+Snipper,TRUE,ARR,La Noscea,Eastern La Noscea,X: 30.4 Y: 35.4,FALSE,Overworld,,8,,snipper.png,TRUE,FALSE,
+Spangencrab,TRUE,SB,Ilsabard,Anemos,X: 29 Y: 21,FALSE,Field operation,,6,,anemos1.png,FALSE,FALSE,latitude: 503 and longitude: 695.5
+Spawning Megalocrab,TRUE,ARR,La Noscea,Middle La Noscea,X: 15 Y: 12,FALSE,Fate,Sister Crustacean,3,,sister.png,TRUE,FALSE,
+Stray Snipper,TRUE,SB,Ilsabard,Pyros,X: 26.1 Y: 25.6,FALSE,Field operation,,11,,stray.png,FALSE,FALSE,latitude: 425.75 and longitude: 616.7
+Suspicious Megalocrab,TRUE,ARR,La Noscea,Lower La Noscea,,FALSE,Leve,Claw-struck; The Deathliest Catch; Man the Ore; Stand By Me,1,,sus.png,FALSE,FALSE,latitude: 212 and longitude: 564.5; latitude: 212 and longitude: 564.5
 Zadnor Stoneshell,TRUE,SHB,Ilsabard,Zadnor,X: 11 Y: 33.3,FALSE,Field operation,,9,,zadnor.png,FALSE,FALSE,latitude: 212.5 and longitude: 246.5
-Deacon,TRUE,SHB,Norvrandt,The Tempest,,FALSE,Hunt,,1,,deacon.png,FALSE,FALSE,
+Territorial Coralshell,TRUE,SB,Other,Other,,FALSE,Treasure Map,SB Treasure Maps,1,,territorial.png,FALSE,FALSE,
+Territorial Megalocrab,TRUE,ARR,La Noscea,Other,,FALSE,Treasure Map,Peisteskin Treasure Map,3,,terry.png,FALSE,FALSE,
+Territorial Snipper,TRUE,ARR,La Noscea,Other,,FALSE,Treasure Map,Goatskin Treasure Map; Toadskin Treasure Map,1,,territorialsnipper.png,FALSE,FALSE,
+Territorial Stoneshell,TRUE,ARR,La Noscea,Other,,FALSE,Treasure Map,Boarskin Treasure Map; Goatskin Treasure Map,3,,territorialstoneshell.png,FALSE,FALSE,
+Territorial Tumbleclaw,TRUE,DT,Xak Tural,Shaaloani,,FALSE,Treasure Map,Br’aaxskin Treasure Map,2,,territorialtumble.png,FALSE,FALSE,
+Thickshell,TRUE,ARR,Thanalan,Western Thanalan,,TRUE,Quest,Compulsory Catering (removed in 5.2),2,,,FALSE,FALSE,
+Thickshell,TRUE,ARR,Thanalan,Western Thanalan,X: 15.6 Y: 16.1,FALSE,Overworld,,9,,thickshell.jpg,FALSE,FALSE,latitude: 626 and longitude: 382.1
 Trilobite,TRUE,SHB,Norvrandt,The Tempest,X:36 Y:15,FALSE,Overworld,,17,,trilobite.png,FALSE,FALSE,latitude: 677 and longitude: 884.5
-Big Claw,TRUE,SHB,Norvrandt,Kholusia,X: 8.1 Y: 32.1,FALSE,Overworld,,9,,claw.png,FALSE,FALSE,latitude: 210.5 and longitude: 172.98
-Blue Swimmer,TRUE,SHB,Norvrandt,The Tempest,X: 36 Y: 8,FALSE,Overworld,,9,,blue.png,FALSE,FALSE,latitude: 834.5 and longitude: 870.0
-Bloated Big Claw,TRUE,SHB,Norvrandt,Kholusia,,FALSE,Quest,A Clam to Die For,1,,bloated.png,FALSE,FALSE,
+Tumbleclaw,TRUE,DT,Xak Tural,Shaaloani,X:30.6 Y:34.5,FALSE,Overworld,,32,,tumbleclaw.png,FALSE,FALSE,latitude: 193 and longitude: 716.5
+Tumbleclaw Kindler,TRUE,DT,Xak Tural,Shaaloani,X:20.7 Y:22.2,FALSE,Fate,Claw and Order,7,,tumble.png,FALSE,FALSE,latitude: 488 and longitude: 469.9
+Uncanny Tumbleclaw,TRUE,DT,Xak Tural,Shaaloani,,FALSE,Quest,Bar the Passage,14,,uncannytumble.jpg,FALSE,FALSE,
+Unkiu,FALSE,SB,Othard,The Ruby Sea,,FALSE,Quest,Of Kojin and Kami,1,Msq lvl 62,,FALSE,FALSE,
+Unkiu,TRUE,SB,Othard,The Ruby Sea,X: 29 Y:34,FALSE,Fate,Crab Mentality,2,,unkiufate.jpg,FALSE,FALSE,latitude: 172.5 and longitude: 703.5
+Unkiu,TRUE,SB,Othard,The Ruby Sea,X: 35.8 Y: 21.5,FALSE,Overworld,,20,,unkiu.jpg,FALSE,FALSE,latitude: 488.75 and longitude: 844.8
+Unkiu,TRUE,SB,Othard,The Ruby Sea,,FALSE,Quest,Unmeasured Strength,4,,un.png,FALSE,FALSE,
+Val Snipper,TRUE,SB,Ilsabard,Pagos,X: 9 Y: 16,FALSE,Field operation,,12,,pagos1.png,FALSE,FALSE,latitude: 614 and longitude: 195.5
+Valley Tumbleclaw,TRUE,DT,Xak Tural,Shaaloani,,FALSE,Dungeon,Tender Valley,2,,valleytumbleclaw.jpg,FALSE,FALSE,latitude: 879.5 and longitude: 688.5
+Vault Crab,TRUE,DT,Unlost World,Living Memory,,FALSE,Treasure Map,Vault Oneiron,4,,,FALSE,FALSE,
+Violet Coralshell,TRUE,SB,Othard,The Ruby Sea,,FALSE,Dungeon,Shisui of the Violet Tides,3,,violetcoral.jpg,FALSE,FALSE,latitude: 120 and longitude: 38.9
+Wandering Craklaw,TRUE,DT,Yok Tural,Kozama'uka,X:7.4 Y:14.5,FALSE,Fate,This Kills the Craklaw,5,,wandering.png,FALSE,FALSE,latitude: 650 and longitude: 153.45
+Warmspring Gasame,TRUE,SB,Othard,The Ruby Sea,,FALSE,Quest,The Fight for Survival,2,,warmspring.png,FALSE,FALSE,
