@@ -325,10 +325,11 @@ const crabsZ = [
     new Crab(246, 212, "Zadnor Stoneshell", "OW", "9", "", "")
 ];
 
-// ILSABARD + ISLAND SANCTUARY + OLD SHARLAYAN
+// ILSABARD + ISLAND SANCTUARY + OLD SHARLAYAN + SINUS ARDORUM + PHAENNA
 
 const crabsOS = [
-    new Crab(543, 384, "Ruby-spotted Crab", "LEVE", "<b>FC:</b> Crabs for the Crabby", "", "")
+    new Crab(543, 384, "Ruby-spotted Crab", "LEVE", "<b>FC:</b> Crabs for the Crabby", "", ""),
+    new Crab(668, 507, "The Merchant's Tale", "VAR", "Restless Crab", "2", "Paths 5-8 & 13")
 ];
 
 const crabsGM = [
@@ -352,6 +353,10 @@ const crabsSA = [
     new Crab(549, 628, "Weeping Pool", "FISH", "Weeping Crab", "", "")
 ];
 
+const crabsP = [
+    new Crabs(1,1, "Fusingway Flow", "FISH", "Bellows Crab", "Shearclaw", "")
+];
+
 // DAWNTRAIL
 
 const crabsUP = [
@@ -364,7 +369,7 @@ const crabsKM = [
 ];
 
 const crabsYT = [
-    new Crab(246, 194, "Jeuno: The First Walk", "RAID", "Aquarius, Robber Crab", "1, 2", ""),
+    new Crab(246, 194, "Jeuno: The First Walk / San d'Oria: The Second Walk", "RAID", "Aquarius, Robber Crab / Clipper ", "1, 2 / 2", ""),
     new Crab(745, 852, "Iq Rrax Tsoly Depths", "FISHUW", "Iq Rrax Crab", "", ""),
     new Crab(112, 831, "Xd'aa Talat Tsoly", "FISHUW", "Turali Land Crab", "", ""),
     new Crab(873, 387, "Xty'iinbek Tsoly", "FISH", "Yak T'el Crab", "", "")
