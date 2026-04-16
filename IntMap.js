@@ -354,7 +354,7 @@ const crabsSA = [
 ];
 
 const crabsP = [
-    new Crabs(1,1, "Fusingway Flow", "FISH", "Bellows Crab", "Shearclaw", "")
+    new Crab(550,550, "Fusingway Flow", "FISH", "Bellows Crab", "Shearclaw", "")
 ];
 
 // DAWNTRAIL
