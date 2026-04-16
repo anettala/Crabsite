@@ -85,6 +85,7 @@ Polis Shell,TRUE,HW,Other,Other,,FALSE,Treasure Map,The Aquapolis,2,,polisshell.
 Polis Snipper,TRUE,HW,Other,Other,,FALSE,Treasure Map,The Aquapolis,1,,polissnipper (1).png,FALSE,FALSE,
 Pyros Crab,TRUE,SB,Ilsabard,Pyros,X: 14.5 Y: 6.8,FALSE,Field operation,,7,,pyros.png,FALSE,FALSE,latitude: 861.5 and longitude: 340.5
 Radiant Crab,TRUE,EW,Ilsabard,Thavnair,,FALSE,Dungeon,Alzadaal's Legacy,8,,radiant.png,FALSE,FALSE,latitude: 205.75 and longitude: 363.7
+Restless Crab,TRUE,DT,The Northern Empty,Old Sharlayan,,FALSE,Variant Dungeon,Paths 1-4 in Variant Dungeon The Merchant's Tale,2,,restlesscrab,FALSE,FALSE,latitude: 507.5 and longitude: 668.3
 River Unkiu,TRUE,SB,Othard,Yanxia,,FALSE,Dungeon,The Swallow's Compass,3,,riverunkiu.jpg,FALSE,FALSE,latitude: 361 and longitude: 264.9
 Robber Crab,TRUE,ARR,La Noscea,Eastern La Noscea,,TRUE,Fate,Our Favorite Pastime,,Only available during The Maiden's Rhapsody Event,,FALSE,FALSE,
 Robber Crab,TRUE,DT,Yok Tural,Yak T'el,,FALSE,Raid,Alliance raid Jeuno: The First Walk,2,,robbercrab.jpg,FALSE,FALSE,latitude: 194 and longitude: 246.9
@@ -120,5 +121,4 @@ Valley Tumbleclaw,TRUE,DT,Xak Tural,Shaaloani,,FALSE,Dungeon,Tender Valley,2,,va
 Vault Crab,TRUE,DT,Unlost World,Living Memory,,FALSE,Treasure Map,Vault Oneiron,4,,vaultcrab.png,FALSE,FALSE,
 Violet Coralshell,TRUE,SB,Othard,The Ruby Sea,,FALSE,Dungeon,Shisui of the Violet Tides,3,,violetcoral.jpg,FALSE,FALSE,latitude: 120 and longitude: 38.9
 Wandering Craklaw,TRUE,DT,Yok Tural,Kozama'uka,X:7.4 Y:14.5,FALSE,Fate,This Kills the Craklaw,5,,wandering.png,FALSE,FALSE,latitude: 650 and longitude: 153.45
-
 Warmspring Gasame,TRUE,SB,Othard,The Ruby Sea,,FALSE,Quest,The Fight for Survival,2,,warmspring.png,FALSE,FALSE,
